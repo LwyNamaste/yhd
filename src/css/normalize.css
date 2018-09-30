@@ -41,6 +41,10 @@ a{
     color: #333;
     }
 img{display: block;}
+img {
+    border: 0 none;
+    vertical-align: top;
+}
 .clearfix:after {
     display: block;
     content: ".";

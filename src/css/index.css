@@ -217,7 +217,7 @@
   color: #ff4040;
 }
 
-.h_bottom_bar {
+.h_bottom_wrap {
   height: 150px;
   background-color: #fff;
 }
@@ -523,6 +523,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.banner_wrap {
+  position: relative;
+}
+
 .mod_hd_allsort {
   position: absolute;
   z-index: 103;
@@ -682,7 +686,7 @@ body {
 .mod_personal_center {
   position: absolute;
   z-index: 102;
-  right: 40px;
+  right: 20px;
   top: 48px;
   width: 205px;
   padding-top: 56px;
@@ -1261,14 +1265,412 @@ body {
   height: 400px;
 }
 
+.personal_clean {
+  float: left;
+  width: 484px;
+  height: 400px;
+  background: #fff url(../images/group_bg.png?801dc06) no-repeat center top;
+}
+.personal_clean h4 {
+  border-top: 1px solid #dfa747;
+}
+.personal_clean h4 a {
+  color: #fff;
+}
+.personal_clean h4 a em {
+  background: #dfa747;
+}
+
+.love_new h4 {
+  height: 32px;
+  margin-bottom: 7px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+}
+
+.love_new h4 a {
+  color: #fff;
+}
+
+.love_new h4 em {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  height: 32px;
+  width: 140px;
+  margin-top: -3px;
+  font-size: 18px;
+}
+
+.love_new h4 em .left_triangle {
+  position: absolute;
+  top: 0;
+  left: -4px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-bottom: 4px solid #a67724;
+  border-left: 4px solid transparent;
+  font-size: 0;
+  line-height: 0;
+}
+
+.love_new h4 em .right_triangle {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-bottom: 4px solid #a67724;
+  border-right: 4px solid transparent;
+  font-size: 0;
+  line-height: 0;
+}
+
+.love_new h4 em i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.love_new .personal_clean .brand_banner {
+  float: left;
+  display: block;
+  _display: inline;
+  width: 250px;
+  height: 360px;
+  overflow: hidden;
+  border-right: 1px solid #f0f0f0;
+}
+.love_new .personal_clean .brand_banner img {
+  width: 250px;
+  height: 360px;
+}
+
+.love_new .personal_clean .brand_right {
+  width: 200px;
+}
+
+.love_new .brand_right {
+  float: right;
+  height: 342px;
+  overflow: hidden;
+  margin-top: 1px;
+  padding-right: 15px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.love_new .brand_right li {
+  position: relative;
+  height: 90px;
+  margin-bottom: 10px;
+  padding: 10px 5px 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.love_new .brand_right .pro_tit {
+  width: 95px;
+  height: 24px;
+  overflow: hidden;
+  position: relative;
+  z-index: 105;
+  color: #333;
+  line-height: 24px;
+}
+
+.love_new .brand_right .pro_sub_tit {
+  position: relative;
+  z-index: 105;
+  height: 24px;
+  overflow: hidden;
+  color: #999;
+}
+
+.love_new .brand_right li a {
+  height: 90px;
+  display: block;
+}
+
+.love_new .brand_right li img {
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+}
+
+.love_new .life_pie {
+  float: right;
+  width: 453px;
+  height: 400px;
+  background: #fff url(../images/group_bg.png?801dc06) no-repeat center top;
+}
+.love_new .life_pie h4 {
+  position: relative;
+  margin-bottom: 20px;
+  border-top: 1px solid #f39156;
+}
+.love_new .life_pie h4 em {
+  background: #f39156;
+}
+
+.love_new .life_pie a.brand_banner {
+  position: relative;
+  float: left;
+  display: block;
+  _display: inline;
+  width: 205px;
+  height: 210px;
+  overflow: hidden;
+  margin-left: 20px;
+  padding-top: 8px;
+  border-right: 1px solid #f0f0f0;
+}
+.love_new .life_pie a.brand_banner img {
+  position: absolute;
+  right: -5px;
+  bottom: 0;
+  width: 210px;
+  height: 210px;
+}
+.love_new .life_pie a.brand_banner .pro_tit {
+  position: relative;
+  z-index: 105;
+  margin-top: 8px;
+  font-size: 16px;
+  color: #333;
+}
+.love_new .life_pie a.brand_banner .pro_sub_tit {
+  position: relative;
+  z-index: 105;
+  width: 85px;
+  height: 40px;
+  overflow: hidden;
+  margin-top: 5px;
+  line-height: 20px;
+  color: #999;
+  font-size: 14px;
+}
+
+.love_new .life_pie .brand_right {
+  position: relative;
+  width: 190px;
+  height: 218px;
+}
+
+.love_new .life_pie .life_pic {
+  padding: 10px 0 0 14px;
+}
+.love_new .life_pie .life_pic a {
+  position: relative;
+  float: left;
+  display: block;
+  width: 188px;
+  height: 95px;
+  overflow: hidden;
+  margin: 0 6px;
+  padding: 10px 0 0 12px;
+}
+.love_new .life_pie .life_pic a img {
+  position: absolute;
+  right: -5px;
+  top: 0;
+  widows: 205px;
+  height: 105px;
+}
+.love_new .life_pie .life_pic a p {
+  position: relative;
+  z-index: 105;
+  font-size: 14px;
+  color: #fb6233;
+}
+
+.love_new .life_pie .life_pic p {
+  position: relative;
+  z-index: 105;
+  font-size: 14px;
+  color: #fb6233;
+}
+
+.love_new .life_pie .life_pic .go {
+  font-size: 12px;
+}
+.love_new .life_pie .life_pic .go .index_iconfont {
+  vertical-align: middle;
+}
+
+.love_new .life_pie .life_pic .brown_color p {
+  color: #a2715b;
+}
+
 .adv_pic {
   height: 100px;
   background: #554499;
+  margin-top: 20px;
+}
+.adv_pic a {
+  display: block;
+  height: 100px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .global_imported {
   height: 490px;
-  background: #5588cc;
+  margin-top: 20px;
+}
+.global_imported h4 {
+  padding: 12px;
+  font-size: 20px;
+}
+.global_imported h4 a {
+  color: #645144;
+}
+.global_imported h4 a i {
+  margin-left: 10px;
+}
+
+.global_imported .left_banner {
+  position: relative;
+  float: left;
+  width: 316px;
+  height: 450px;
+}
+.global_imported .left_banner .banner_pic {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.global_imported .left_banner .banner_link {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+}
+
+.global_imported .left_banner li {
+  float: left;
+}
+.global_imported .left_banner li a {
+  display: block;
+  width: 83px;
+  height: 28px;
+  margin: 0 10px 10px 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  line-height: 28px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.global_imported .center_con {
+  float: left;
+  width: 609px;
+  overflow: hidden;
+  padding: 5px 5px 5px 0;
+}
+
+.fl {
+  float: left;
+}
+
+.global_imported .right_con {
+  float: right;
+  width: 203px;
+  height: 440px;
+  _overflow: hidden;
+}
+
+.global_imported .global_pic {
+  position: relative;
+  display: block;
+  width: 405px;
+  height: 220px;
+  margin-bottom: 1px;
+  background-color: #fff;
+}
+.global_imported .global_pic img {
+  width: 405px;
+  height: 220px;
+}
+
+.global_imported .pro_item_wrap {
+  float: left;
+}
+
+.global_imported .pro_shoppe {
+  padding-bottom: 1px;
+}
+
+.global_imported .pro_item_wrap .pro_shoppe {
+  display: inline;
+  float: left;
+  width: 202px;
+  margin-right: 1px;
+}
+
+.global_imported .pro_shoppe a {
+  position: relative;
+  display: block;
+  height: 200px;
+  padding: 20px 0 0 20px;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.global_imported .global_category {
+  float: right;
+  width: 298px;
+}
+
+.global_imported .global_category li {
+  float: left;
+}
+
+.global_imported .global_category img {
+  position: absolute;
+  right: -5px;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.global_imported .global_category .jk_mh {
+  background-color: #ffe6ee;
+}
+
+.global_imported .global_category .jk_my {
+  background-color: #fff3e4;
+}
+
+.global_imported .global_category .jk_sx {
+  background-color: #e9fbf0;
+}
+
+.global_imported .global_category .jk_jj {
+  background-color: #f9eee9;
+}
+
+.global_imported .global_category .jk_cw {
+  background-color: #f0f8ff;
+}
+
+.global_imported .global_category .jk_bj {
+  background-color: #e2f8f2;
+}
+
+.global_imported .global_category a {
+  position: relative;
+  display: block;
+  width: 137px;
+  height: 138px;
+  overflow: hidden;
+  padding: 12px 0 0 12px;
+  line-height: 26px;
 }
 
 .footercontent {
