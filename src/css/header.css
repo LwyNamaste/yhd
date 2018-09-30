@@ -219,6 +219,7 @@
 
 .h_bottom_bar {
   height: 150px;
+  background-color: #fff;
 }
 
 .h_bottom_bar .hd_logo_area {
@@ -283,6 +284,11 @@
   line-height: 36px;
   color: #fff;
   cursor: pointer;
+}
+.hd_search_wrap .hd_search_btn i {
+  font-size: 24px;
+  text-decoration: none;
+  font-style: normal;
 }
 
 .hd_hot_search {

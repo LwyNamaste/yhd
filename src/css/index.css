@@ -219,6 +219,7 @@
 
 .h_bottom_bar {
   height: 150px;
+  background-color: #fff;
 }
 
 .h_bottom_bar .hd_logo_area {
@@ -283,6 +284,11 @@
   line-height: 36px;
   color: #fff;
   cursor: pointer;
+}
+.hd_search_wrap .hd_search_btn i {
+  font-size: 24px;
+  text-decoration: none;
+  font-style: normal;
 }
 
 .hd_hot_search {
@@ -446,6 +452,10 @@
 .footer_bottom_brand a {
   display: inline-block;
   margin: 0 4px;
+}
+
+body {
+  background-color: #f5f5f5;
 }
 
 .wrap {
@@ -900,13 +910,355 @@
 }
 
 .num_one_shan {
+  margin-top: 20px;
+}
+.num_one_shan .left_banner {
+  position: relative;
+  _display: inline;
+  float: left;
+  width: 267px;
   height: 400px;
-  background: #883322;
+  overflow: hidden;
+  margin-right: 12px;
+}
+.num_one_shan .left_banner img {
+  width: 267px;
+  height: 400px;
+}
+
+.num_one_shan h4 {
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+}
+.num_one_shan h4 em {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  width: 140px;
+  margin-top: -3px;
+  font-size: 18px;
+}
+
+.num_one_shan .banner_title {
+  position: absolute;
+  left: 50%;
+  bottom: 34px;
+  width: 200px;
+  height: 100px;
+  margin-left: -100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+.num_one_shan .banner_title h4 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+  line-height: 24px;
+}
+.num_one_shan .banner_title .title_line {
+  width: 30px;
+  height: 10px;
+  overflow: hidden;
+  margin: 2px auto 0;
+  border-top: 1px solid #333;
+}
+.num_one_shan .banner_title .title_time {
+  height: 16px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333;
+}
+
+.num_one_shan .group_buy {
+  float: left;
+  width: 484px;
+  height: 400px;
+  background: #fff url(../images/group_bg.png?801dc06) no-repeat center top;
+}
+.num_one_shan .group_buy h4 {
+  margin-bottom: 7px;
+  border-top: 1px solid #fb744b;
+}
+.num_one_shan .group_buy h4 a {
+  color: #fff;
+  cursor: pointer;
+}
+.num_one_shan .group_buy h4 a em {
+  background: #fb6233;
+}
+
+.num_one_shan h4 em .left_triangle {
+  position: absolute;
+  top: 0;
+  left: -4px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-bottom: 4px solid #c84e4e;
+  border-left: 4px solid transparent;
+  font-size: 0;
+  line-height: 0;
+}
+
+.num_one_shan h4 em .right_triangle {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-bottom: 4px solid #c84e4e;
+  border-right: 4px solid transparent;
+  font-size: 0;
+  line-height: 0;
+}
+
+.num_one_shan h4 em i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.num_one_shan .group_buy .group_today {
+  position: relative;
+  float: left;
+  width: 250px;
+  overflow: hidden;
+  border-right: 1px solid #f0f0f0;
+}
+.num_one_shan .group_buy .group_today a {
+  display: block;
+  width: 250px;
+  height: 360px;
+}
+.num_one_shan .group_buy .group_today a img {
+  width: 250px;
+  height: 360px;
+}
+
+.fr {
+  float: right;
+}
+.fr .group_variety {
+  position: relative;
+  width: 232px;
+  margin-top: 18px;
+}
+.fr .group_variety a {
+  display: block;
+  height: 180px;
+  margin: 0 18px 0 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.fr .group_variety a img {
+  position: absolute;
+  right: 18px;
+  bottom: 10px;
+}
+.fr .group_brand {
+  position: relative;
+  float: left;
+  width: 232px;
+}
+.fr .group_brand a {
+  display: block;
+  height: 161px;
+  padding: 0 18px 0 20px;
+}
+.fr .group_brand a img {
+  position: absolute;
+  right: 18px;
+  bottom: 15px;
+}
+
+.num_one_shan .group_buy .group_tit {
+  height: 18px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  font-size: 18px;
+  color: #ec3639;
+  line-height: 18px;
+}
+
+.num_one_shan .group_buy .sub_tit {
+  position: relative;
+  z-index: 105;
+  width: 90px;
+  height: 40px;
+  overflow: hidden;
+  font-size: 14px;
+  color: #333;
+  line-height: 20px;
+}
+
+.num_one_shan .group_buy .group_brand .group_tit {
+  padding-top: 10px;
+}
+
+.num_one_shan .area_rank {
+  float: right;
+  width: 453px;
+  height: 400px;
+  background: #fff url(../images/group_bg.png?801dc06) no-repeat center top;
+}
+.num_one_shan .area_rank h4 {
+  position: relative;
+  border-top: 1px solid #f22e31;
+}
+.num_one_shan .area_rank h4 em {
+  background: #f22e31;
+}
+
+.num_one_shan h4 a {
+  color: #fff;
+  cursor: pointer;
+}
+
+.num_one_shan .area_rank a.more {
+  position: absolute;
+  top: 7px;
+  right: 14px;
+  color: #999;
+  line-height: 20px;
+  font-size: 12px;
+}
+.num_one_shan .area_rank a.more span {
+  margin-left: 5px;
+  font-family: "\5b8b\4f53";
+}
+
+.num_one_shan .area_rank_list {
+  margin-top: 5px;
+}
+
+.num_one_shan .rank_tab {
+  position: relative;
+  height: 35px;
+  overflow: hidden;
+  margin: 0 22px 0 21px;
+  line-height: 34px;
+}
+.num_one_shan .rank_tab ul {
+  border-bottom: 1px solid #eee;
+}
+
+.num_one_shan .rank_tab li {
+  display: inline;
+  float: left;
+  width: 82px;
+  text-align: center;
+}
+
+.num_one_shan .rank_tab li.cur a {
+  color: #f22e31;
+}
+
+.num_one_shan .rank_tab li a {
+  display: block;
+  color: #666;
+}
+
+.num_one_shan .rank_tab .cur_item {
+  position: absolute;
+  left: 0;
+  top: 33px;
+  width: 82px;
+  border-top: 2px solid #f22e31;
+}
+
+.num_one_shan .rank_content {
+  height: 316px;
+  padding: 10px 2px 0 1px;
+}
+.num_one_shan .rank_content li {
+  _display: inline;
+  float: left;
+  width: 100px;
+  margin: 15px 25px;
+  cursor: pointer;
+}
+.num_one_shan .rank_content li a {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.num_one_shan .rank_content li a a .discount_info {
+  padding: 0px 6px;
+  background-color: #fb6233;
+  color: #fff;
+  position: absolute;
+  left: 0px;
+  bottom: 29px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.num_one_shan .rank_content li img {
+  width: 100px;
+  height: 100px;
+}
+
+.num_one_shan .rank_content li .pro_name {
+  height: 18px;
+  overflow: hidden;
+  margin-top: 10px;
+  line-height: 18px;
+}
+
+.num_one_shan .rank_content li a .discount_info {
+  padding: 0px 6px;
+  background-color: #fb6233;
+  color: #fff;
+  position: absolute;
+  left: 0px;
+  bottom: 29px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.num_one_shan .rank_content li a i {
+  position: absolute;
+  top: -6px;
+  left: -2px;
+  width: 19px;
+  height: 16px;
+  overflow: hidden;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  font-style: normal;
+  font-size: 11px;
+}
+
+.num_one_shan .rank_content li a .no_1 {
+  background: url(../images/indexbody_sprite.png?801dc06) no-repeat -60px 0;
+}
+
+.num_one_shan .rank_content li a .no_2 {
+  background: url(../images/indexbody_sprite.png?801dc06) no-repeat -90px 0;
+}
+
+.num_one_shan .rank_content li a .no_3 {
+  background: url(../images/indexbody_sprite.png?801dc06) no-repeat -120px 0;
 }
 
 .love_new {
+  margin-top: 20px;
+}
+.love_new .left_banner {
+  _display: inline;
+  float: left;
+  width: 267px;
   height: 400px;
-  background: yellow;
+  overflow: hidden;
+  margin-right: 12px;
+}
+.love_new .left_banner img {
+  width: 267px;
+  height: 400px;
 }
 
 .adv_pic {
