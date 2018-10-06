@@ -1,4 +1,4 @@
-<!--头部-->
+<!--首页头部-->
 <div class="h_header_wrap">
 	<div class="h_top_bar">
 		<div class="wrap">
@@ -13,8 +13,8 @@
 					<li>
 						<div class="login">
 							<span>Hi,请</span>
-							<a href="#"class="log">登录&nbsp;</a>
-							<a href="#"class="reg">&nbsp;注册</a>
+							<a href="#" class="log">登录&nbsp;</a>
+							<a href="#" class="reg">&nbsp;注册</a>
 						</div>
 					</li>
 					<li>
@@ -53,82 +53,103 @@
 	</div>
 	<div class="h_bottom_wrap">
 		<div class="wrap h_bottom_bar">
-		<div class="hd_logo_area">
-			<a target="_blank" class="hd_logo" href="//sale.yhd.com/act/DRHrdyxUKlE.html">
-				<img alt="1号店小家电超级品类日" src="//img30.360buyimg.com/img/jfs/t25495/270/1324779002/13332/ef333a62/5badf690N569db9dc.gif">
-			</a>
-		</div>
-		<div class="hd_header_right">
-			<div class="clearfix">
-				<div class="hd_head_search" style="z-index: 501;">
-					<div class="hd_search_form"style="top: 0px;">
-						<div class="hd_fixed_wrap">
-							<div class="hd_search_wrap clearfix">
-								<label for="keyword" style="color: rgb(170, 170, 170);"></label>
-								<input class="hd_search_ipt" name="keyword" id="keyword" type="text" value="" placeholder="买小家电上1号店">
-								<button type="button" class="hd_search_btn" onclick="javascript:searchMeForClick();">
+			<div class="hd_logo_area">
+				<a target="_blank" class="hd_logo" href="//sale.yhd.com/act/DRHrdyxUKlE.html">
+					<img alt="1号店小家电超级品类日" src="//img30.360buyimg.com/img/jfs/t25495/270/1324779002/13332/ef333a62/5badf690N569db9dc.gif">
+				</a>
+			</div>
+			<div class="hd_header_right">
+				<div class="clearfix">
+					<div class="hd_head_search" style="z-index: 501;">
+						<div class="hd_search_form" style="top: 0px;">
+							<div class="hd_fixed_wrap">
+								<div class="hd_search_wrap clearfix">
+									<label for="keyword" style="color: rgb(170, 170, 170);"></label>
+									<input class="hd_search_ipt" name="keyword" id="keyword" type="text" value="" placeholder="买小家电上1号店">
+									<button type="button" class="hd_search_btn" onclick="javascript:searchMeForClick();">
 									<i class="hd_iconfont"></i>
 								</button>
+								</div>
+								<!--搜索提示 begin-->
+								<div id="searchSuggest" class="hd_search_tips_result" style="display: block;" onmouseover="$('#searchSuggest').show()"></div>
+								<!--搜索提示 end-->
 							</div>
-							<!--搜索提示 begin-->
-							<div id="searchSuggest" class="hd_search_tips_result" style="display: block;" onmouseover="$('#searchSuggest').show()"></div>
-							<!--搜索提示 end-->
 						</div>
+						<p class="hd_hot_search">
+							<a title="饮料饮品" target="_blank" href="//search.yhd.com/c0-0/k%25E9%25A5%25AE%25E6%2596%2599%25E9%25A5%25AE%25E5%2593%2581/">饮料饮品</a>
+							<a title="女装" target="_blank" href="//search.yhd.com/c0-0/k%25E5%25A5%25B3%25E8%25A3%2585/">女装</a>
+							<a title="牙刷" target="_blank" href="//search.yhd.com/c0-0/k%25E7%2589%2599%25E5%2588%25B7/">牙刷</a>
+							<a title="饼干" target="_blank" href="//search.yhd.com/c0-0/k%25E9%25A5%25BC%25E5%25B9%25B2/">饼干</a>
+							<a title="蓝牙耳机" target="_blank" href="//search.yhd.com/c0-0/k%25E8%2593%259D%25E7%2589%2599%25E8%2580%25B3%25E6%259C%25BA/">蓝牙耳机</a>
+							<a title="火腿肠" target="_blank" href="//search.yhd.com/c0-0/k%25E7%2581%25AB%25E8%2585%25BF%25E8%2582%25A0/">火腿肠</a>
+							<a title="猪肉" target="_blank" href="//search.yhd.com/c0-0/k%25E7%258C%25AA%25E8%2582%2589/">猪肉</a>
+							<a title="薯片" target="_blank" href="//search.yhd.com/c0-0/k%25E8%2596%25AF%25E7%2589%2587/">薯片</a>
+							<a title="红酒" target="_blank" href="//search.yhd.com/c0-0/k%25E7%25BA%25A2%25E9%2585%2592/">红酒</a>
+							<a title="洗衣液凝珠" target="_blank" href="//search.yhd.com/c0-0/k%25E6%25B4%2597%25E8%25A1%25A3%25E6%25B6%25B2%25E5%2587%259D%25E7%258F%25A0/">洗衣液凝珠</a>
+						</p>
+						<!--搜索推荐-->
 					</div>
-					<p class="hd_hot_search">
-						<a title="饮料饮品" target="_blank" href="//search.yhd.com/c0-0/k%25E9%25A5%25AE%25E6%2596%2599%25E9%25A5%25AE%25E5%2593%2581/">饮料饮品</a>
-						<a title="女装" target="_blank" href="//search.yhd.com/c0-0/k%25E5%25A5%25B3%25E8%25A3%2585/">女装</a>
-						<a title="牙刷" target="_blank" href="//search.yhd.com/c0-0/k%25E7%2589%2599%25E5%2588%25B7/">牙刷</a>
-						<a title="饼干" target="_blank" href="//search.yhd.com/c0-0/k%25E9%25A5%25BC%25E5%25B9%25B2/">饼干</a>
-						<a title="蓝牙耳机" target="_blank" href="//search.yhd.com/c0-0/k%25E8%2593%259D%25E7%2589%2599%25E8%2580%25B3%25E6%259C%25BA/">蓝牙耳机</a>
-						<a title="火腿肠" target="_blank" href="//search.yhd.com/c0-0/k%25E7%2581%25AB%25E8%2585%25BF%25E8%2582%25A0/">火腿肠</a>
-						<a title="猪肉" target="_blank" href="//search.yhd.com/c0-0/k%25E7%258C%25AA%25E8%2582%2589/">猪肉</a>
-						<a title="薯片" target="_blank" href="//search.yhd.com/c0-0/k%25E8%2596%25AF%25E7%2589%2587/">薯片</a>
-						<a title="红酒" target="_blank" href="//search.yhd.com/c0-0/k%25E7%25BA%25A2%25E9%2585%2592/">红酒</a>
-						<a title="洗衣液凝珠" target="_blank" href="//search.yhd.com/c0-0/k%25E6%25B4%2597%25E8%25A1%25A3%25E6%25B6%25B2%25E5%2587%259D%25E7%258F%25A0/">洗衣液凝珠</a>
-					</p>
-					<!--搜索推荐-->
+					<div class="hd_mini_cart" id="miniCart">
+						<a href="#" class="hd_prism_cart">
+							<em class="hd_iconfont"></em>
+							<span>购物车</span>
+						</a>
+					</div>
 				</div>
-				<div class="hd_mini_cart" id="miniCart">
-					<a href="#" class="hd_prism_cart">
-						<em class="hd_iconfont"></em>
-						<span>购物车</span>
-					</a>
+				<div class="hd_header_nav">
+					<ul class="clearfix">
+						<li>
+							<a href="//qianggou.yhd.com/" title="1号抢购" target="_blank">1号抢购</a>
+						</li>
+						<li>
+							<a href="//t.yhd.com/" title="1号团" target="_blank">1号团</a>
+						</li>
+						<li>
+							<a href="//coupon.yhd.com/couponCenter/home" title="领券中心" target="_blank">领券中心</a>
+						</li>
+						<li>
+							<a href="//channel.yhd.com/recharge.html" title="充值中心" target="_blank">充值中心</a>
+						</li>
+						<li>
+							<a href="//channel.yhd.com/import.html" title="全球进口" target="_blank">全球进口</a>
+						</li>
+						<li>
+							<a href="https://sale.yhd.com/act/5Wo4jnHyYmg.html" title="1号生鲜" target="_blank">1号生鲜</a>
+						</li>
+						<li>
+							<a href="https://sale.yhd.com/act/uf0DFM6Iahpn.html" title="美妆个护" target="_blank">美妆个护</a>
+						</li>
+						<li>
+							<a href="https://sale.yhd.com/act/LPHwt8z1A5x.html" title="家居馆" target="_blank">家居馆</a>
+						</li>
+						<li>
+							<a href="https://sale.yhd.com/act/PnGHmKZ4u16pab.html" title="电器城" target="_blank">电器城</a>
+						</li>
+					</ul>
 				</div>
-			</div>
-			<div class="hd_header_nav">
-				<ul class="clearfix">
-					<li>
-						<a href="//qianggou.yhd.com/" title="1号抢购" target="_blank">1号抢购</a>
-					</li>
-					<li>
-						<a href="//t.yhd.com/" title="1号团" target="_blank">1号团</a>
-					</li>
-					<li>
-						<a href="//coupon.yhd.com/couponCenter/home" title="领券中心" target="_blank">领券中心</a>
-					</li>
-					<li>
-						<a href="//channel.yhd.com/recharge.html" title="充值中心" target="_blank">充值中心</a>
-					</li>
-					<li>
-						<a href="//channel.yhd.com/import.html" title="全球进口" target="_blank">全球进口</a>
-					</li>
-					<li>
-						<a href="https://sale.yhd.com/act/5Wo4jnHyYmg.html" title="1号生鲜" target="_blank">1号生鲜</a>
-					</li>
-					<li>
-						<a href="https://sale.yhd.com/act/uf0DFM6Iahpn.html" title="美妆个护" target="_blank">美妆个护</a>
-					</li>
-					<li>
-						<a href="https://sale.yhd.com/act/LPHwt8z1A5x.html" title="家居馆" target="_blank">家居馆</a>
-					</li>
-					<li>
-						<a href="https://sale.yhd.com/act/PnGHmKZ4u16pab.html" title="电器城" target="_blank">电器城</a>
-					</li>
-				</ul>
 			</div>
 		</div>
-    </div>
 	</div>
-    
 </div>
+<!--登录注册头部-->
+<div class="regist_header clearfix">
+	<div class="wrap">
+        <a href="http://www.yhd.com" class="logo">
+        	<img src="https://passport.yhd.com/front-passport/passport/images/loginlogo.jpg" height="55" alt="1号店">
+        </a>
+        <div class="regist_header_right clearfix">
+            <div class="help_wrap">
+                <a class="hd_menu" a href="#"><s class="help_ico"></s>帮助中心</a>
+                <div class="hd_menu_list">
+                    <ul>
+                        <li><a href="#">包裹跟踪</a></li>
+                        <li><a a href="#">常见问题</a></li>
+                        <li><a a href="#">在线退换货</a></li>
+                        <li><a a href="#">在线投诉</a></li>
+                    </ul>
+                </div>
+            </div>
+            <span class="fr">您好，欢迎光临1号店！ <a href="#" class="blue_link">请登录</a></span>
+        </div>
+    </div>
+  </div>

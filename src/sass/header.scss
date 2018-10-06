@@ -6,7 +6,15 @@
         url("../fonts/iconfont_new.ttf") format("truetype"), 
         url("../fonts/iconfont_new.svg#uxiconfont") format("svg")
 }
-.hd_iconfont,.prism_iconfont,.index_iconfont {
+.prism_iconfont,.index_iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    -moz-osx-font-smoothing: grayscale
+}
+.hd_iconfont{
     font-family: "iconfont" !important;
     font-size: 14px;
     font-style: normal;
@@ -305,4 +313,71 @@
         margin-right: 30px;
         font-size: 16px;
     }
+}
+//登录注册头部
+.regist_header {
+    padding: 16px;
+    background: #FFF;
+    border: 1px solid #e1e1e1;
+}
+.regist_header .wrap {
+    width: 1200px;
+}
+.regist_header .logo {
+    display: block;
+    float: left;
+    width: 54px;
+    height: 48px;
+}
+.regist_header_right {
+    float: right;
+    line-height: 20px;
+    color: #999;
+}
+.regist_header_right .help_wrap {
+    position: relative;
+    z-index: 1010;
+    float: right;
+    padding: 0 6px;
+    margin-left: 25px;
+    a.hd_menu {
+        padding-right: 18px;
+        background: url(../images/regist.png?89c7455) no-repeat right -27px;
+        color: #333;
+    }
+}
+.regist_header_right .help_wrap a.hd_menu .help_ico {
+    width: 16px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 6px;
+    background: url(../images/regist.png?89c7455) no-repeat -344px 0;
+    vertical-align: middle;
+}
+.regist_header_right .help_wrap .hd_menu_list {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    right: 0;
+    width: 98px;
+    padding-top: 21px;
+    border: 1px solid #ccc;
+}
+.regist_header_right .help_wrap_hover .hd_menu_list ul {
+    background: #FFF;
+}
+.regist_header_right .hd_menu_list a {
+    height: 24px;
+    display: block;
+    padding-left: 25px;
+    border-top: 1px dotted #e4e4e4;
+    background: #FFF;
+    line-height: 24px;
+}
+.fr {
+    float: right;
+}
+a.blue_link {
+    color: #06c;
 }
