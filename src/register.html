@@ -2,15 +2,164 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>注册1号店</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/other.css">
 	</head>
 	<body>
 		<!--导入头部-->
 		<div class="reg_head"></div>
+		<!--注册表单-->	
+		<div class="y_regist_wrap">
+			<div class="y_regist_model">
+				<h4 class="y_regist_tit">1号店注册</h4>
+				<div class="y_regist_form">
+					<ul class="clearfix">
+						<li>
+							<div class="y_same_item">
+								<input class="ysame_input" type="text" value="" id="userName">
+								<span class="y_same_label">用户名</span>
+							</div>
+							<div class="y_regist_tips y_regist_tips_black" style="top: 16px;">
+								<div class="y_regtip_rel">
+									<i></i>
+									<div class="y_tips_words">
 			
-		
+									</div>
+								</div>
+							</div>
+			
+							<div class="y_regist_right"></div>
+						</li>
+			
+						<li>
+							<div class="y_same_item">
+								<input class="ysame_input" type="text" value="" id="phone">
+								<span class="y_same_label">手机号</span>
+							</div>
+							<div class="y_regist_tips y_regist_tips_black" style="top: -4px;">
+								<div class="y_regtip_rel">
+									<i></i>
+									<div class="y_tips_words">
+										请填写正确的手机号码，以便 接收订单通知，找回密码等
+									</div>
+								</div>
+							</div>
+			
+							<div class="y_regist_right"></div>
+						</li>
+						<li class="ishort_li clearfix" style="display: none;">
+							<div class="fl y_same_item">
+								<input class="ysame_input" type="text" value="" id="validCode">
+								<span class="y_same_label">验证码</span>
+							</div>
+							<a class="fl r_yzm_code" href="javascript:;" id="changevalidate">
+								<img id="validateImg" width="124" height="50">
+								<span class="yzm_change_mask"><em></em><i>换一张</i></span>
+							</a>
+							<!-- -->
+							<div class="y_regist_tips y_regist_tips_red" style="top: 26px;">
+								<div class="y_regtip_rel">
+									<i></i>
+									<div class="y_tips_words">
+										请输入正确的验证码
+									</div>
+								</div>
+							</div>
+						</li>
+			
+						<li class="ishort_li clearfix ">
+							<div class="fl y_same_item">
+								<input class="ysame_input" type="text" value="">
+								<span class="y_same_label">短信验证码</span>
+							</div>
+			
+							<a class="receive_code fl same_code_btn r_disable_code " href="javascript:;">获取验证码</a>
+			
+							<div class="y_regist_tips y_regist_tips_red" style="top: -14px;">
+								<div class="y_regtip_rel">
+									<i></i>
+									<div class="y_tips_words">
+										如无法接受验证码，请重启手机并确认短信未被拦截！4G用户请关闭4G网络进行接收
+									</div>
+								</div>
+							</div>
+						</li>
+			
+						<li>
+							<div class="y_same_item">
+								<input class="ysame_input y_set_password" type="password" oncopy="return false;" oncut="return false;" onpaste="return false;" autocomplete="off" id="password">
+								<span class="y_same_label">设置密码</span>
+							</div>
+							<div class="y_regist_tips y_regist_tips_red" style="top: 6px;">
+								<div class="y_regtip_rel">
+									<i></i>
+									<div class="y_tips_words">
+										6-20个大小
+									</div>
+								</div>
+							</div>
+			
+							<div class="y_regist_tips_keywords strength_l">
+								<div class="y_regtip_rel">
+									<i></i>
+									<div class="y_tips_words y_tips_words_key">
+										<em class="em_redA"></em>
+										<em></em>
+										<em></em>
+										<b class="em_words">低</b>
+									</div>
+								</div>
+							</div>
+			
+							<div class="y_regist_tips_keywords strength_m">
+								<div class="y_regtip_rel">
+									<i></i>
+									<div class="y_tips_words y_tips_words_key">
+										<em class="em_yellowA1"></em><em class="em_yellowA1"></em><em></em><b class="em_words">中</b>
+									</div>
+								</div>
+							</div>
+			
+							<div class="y_regist_tips_keywords strength_h">
+								<div class="y_regtip_rel">
+									<i></i>
+									<div class="y_tips_words y_tips_words_key">
+										<em class="em_greenA1"></em><em class="em_greenA1"></em><em class="em_greenA1"></em><b class="em_words">高</b>
+									</div>
+								</div>
+							</div>
+						</li>
+			
+						<li>
+							<div class="y_same_item">
+								<input class="ysame_input" type="password">
+								<span class="y_same_label">确认密码</span>
+							</div>
+			
+							<div class="y_regist_tips y_regist_tips_red" style="top: 6px;">
+								<div class="y_regtip_rel">
+									<i></i>
+									<div class="y_tips_words">
+										请再次输入密码
+									</div>
+								</div>
+							</div>
+			
+							<div class="y_regist_right"></div>
+						</li>
+						<li>
+							<div class="y_agreement_word">点击注册，表示您同意1号店
+								<a href="http://cms.yhd.com/cms/view.do?topicId=10" target="_blank">《服务协议及隐私声明》</a>
+							</div>
+							<a class="y_agreement_btn" href="#">同意协议并注册</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--导入底部-->
+		<div class="reg_foot"></div>		
 		
 		
 <script type="text/javascript"src="script/thirdplugins/jquery.js"></script>

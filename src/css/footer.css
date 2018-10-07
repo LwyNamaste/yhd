@@ -114,4 +114,20 @@
   margin: 0 4px;
 }
 
+.simplefooter {
+  width: 980px;
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+.simplefooter a {
+  margin: 0 8px;
+  color: #333;
+}
+
+.simplefooter p {
+  margin-top: 10px;
+  color: #333;
+}
+
 /*# sourceMappingURL=footer.css.map */
