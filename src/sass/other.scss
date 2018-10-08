@@ -717,7 +717,7 @@ a.y_agreement_btn {
          url('../fonts/iconfont_common.ttf') format('truetype'),
          url('../fonts/iconfont_common.svg#iconfont') format('svg')
 }
-.iconfont,.yhd-fe-iconfont {
+.yhd-fe-iconfont {
     font-family: "yhd-fe-iconfont" !important;
     font-size: 16px;
     font-style: normal;
@@ -773,12 +773,339 @@ a.y_agreement_btn {
         float: left;
     }
 }
-.information_price p{
+//好评率
+.information_price .pink{
     height: 30px;
     background-color: #fff4f2;
     padding-left: 70px;
     line-height: 30px;
     border-top: 1px solid #ffcbc4;
+}
+.information_price .pink li {
+    float: left;
+    color: #666;
+    margin-right: 13%;
+    line-height: 30px;
+}
+.information_price .pink li .hpl a, .information_price .pink li .last a {
+    color: #666;
+}
+.information_price .pink li .iconDetail {
+    color: #ff875a;
+    padding-right: 4px;
+}
+.information_price .pink li strong {
+    color: #ff875a;
+}
+.information_price .pink li .pl {
+    color: #aaa;
+}
+.information_price .pink li .orange {
+    color: #ff875a;
+}
+//促销
+.information_promotion {
+    padding-top: 15px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 15;
+}
+.information_promotion dt, .information_promotion dd, .mod_detailInfo_combList dt, .mod_detailInfo_combList dd {
+    float: left;
+}
+.information_promotion dt, .mod_detailInfo_combList dt {
+    width: 60px;
+    color: #666;
+    padding-left: 10px;
+    line-height: 26px;
+}
+.information_promotion dd {
+    width: 486px;
+    .list {
+        margin-bottom: 10px;
+    }
+}
+.information_promotion dd .list .fr {
+    color: #999;
+}
+.information_promotion dd .list .fr .yow{
+    color: #ff875a;
+    font-weight: bold;
+}
+.information_promotion dd .list .fl {
+    float: left;
+    width: 340px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+.information_promotion .list .fl {
+    width: auto;
+    overflow: visible;
+}
+.information_promotion dd .list .fl .sub {
+    float: left;
+    height: 14px;
+    line-height: 14px;
+    padding: 1px 5px;
+    color: #fff;
+    background-color: #ff875a;
+    border-radius: 1px;
+    margin-right: 10px;
+}
+.information_promotion dd .list .fl .tit {
+    float: left;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+//选择颜色
+.information_color {
+    border: dotted #d9d9d9;
+    border-width: 1px 0;
+    padding: 15px 0 5px 0;
+    position: relative;
+    z-index: 16;
+}
+#choose_color-attr-1 {
+    line-height: 40px;
+}
+#choose_color .li {
+    width: 516px;
+    padding: 5px 0 5px 72px;
+    float: left;
+}
+#choose_color .dt {
+    float: left;
+    width: 90px;
+    margin-left: -90px;
+    display: inline;
+    text-align: right;
+    font-family: simsun;
+    font-size: 12px;
+    color: #666;
+}
+#choose_color-attr-1 .dt {
+    margin-top: 10px;
+}
+.p-choose_color-wrap .item {
+    float: left;
+    margin: 2px 8px 2px 0;
+    position: relative;
+}
+.p-choose_color .item a {
+    float: left;
+}
+.p-choose_color-wrap .item a {
+    padding: 4px 6px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+}
+#choose_color a {
+    display: block;
+    white-space: nowrap;
+    text-decoration: none;
+}
+#choose_color-attr-1 .item a {
+    font-size: 0;
+    padding: 1px;
+}
+#choose_color-attr-1 .item a {
+    padding: 0;
+}
+#choose_color-attr-1 .item a img {
+    margin: 1px 3px 1px 1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#choose_color-attr-1 .item a i {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+    margin: 0 8px;
+}
+#choose_color-attr-1 i {
+    font-style: normal;
+}
+.p-choose_color-wrap .item.selected b {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    background: url(//static.360buyimg.com/item/main/1.0.35/css/i/newicon20140910.png?8ffc6d7) no-repeat -202px -224px;
+}
+#choose_color-attrs .item.hover a, #choose_color-attrs .item.selected a, #choose_color-attrs .item:hover a {
+    border: 1px solid #e60021;
+    color: #333;
+}
+//送货至
+.information_addressbox {
+    padding-top: 15px;
+}
+.error_txt {
+    display: none;
+    padding-left: 1em;
+    background-color: #ffe9e9;
+    color: #ff3c3c;
+    height: 26px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    clear: both;
+}
+.information_addressbox dt, .information_ensure dt{
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    width: 60px;
+    color: #666;
+    padding-left: 10px;
+}
+.information_addressbox dd {
+    float: left;
+}
+.information_addressbox dd .add_one {
+    margin-bottom: 10px;
+}
+.add_selectbox {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    .input_btn {
+        position: relative;
+        float: left;
+        padding: 0 8px;
+        height: 24px;
+        border: 1px solid #ccc;
+        line-height: 24px;
+        z-index: 5;
+        cursor: pointer;
+    }
+}
+.information_addressbox dd .add_two,.information_addressbox dd .area_info {
+    width: 498px;
+}
+.information_addressbox dd .area_info p {
+    line-height: 26px;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.information_addressbox dd .area_info p strong {
+    font-size: 12px;
+    color: #333;
+}
+.information_addressbox dd .add_two {
+    position: relative;
+    line-height: 16px;
+    color: #666;
+}
+.detail_information .link {
+    color: #06c;
+}
+//加入购物车
+.information_addcart {
+    margin-bottom: 10px;
+    padding-left: 70px;
+    padding-top: 10px;
+}
+.information_addcart .count_item, .information_addcart .cartbox {
+    float: left;
+}
+.information_addcart .count_item .count_num {
+    width: 46px;
+    height: 46px;
+}
+.information_addcart .count_item .count_num input {
+    display: block;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #c8c7cc;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 46px;
+    overflow: hidden;
+}
+.information_addcart .count_item .count_num, .information_addcart .count_item .count_act {
+    float: left;
+}
+.information_addcart .count_item .count_act input {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    cursor: pointer;
+}
+.information_addcart .count_item .count_act .add {
+    background: url(../images/detail_sprit24.png?8ffc6d7) no-repeat;   
+    background-position: -124px -49px;
+}
+.information_addcart .count_item .count_act .no_reduce {
+    background: url(../images/detail_sprit24.png?8ffc6d7) no-repeat;
+    background-position: -148px -73px;
+    cursor: default;
+}
+.information_addcart .cartbox {
+    max-width: 400px;
+}
+.information_addcart .cartbox a.add_btn {
+    width: 138px;
+    height: 48px;
+    font-size: 0;
+    line-height: 0;
+    border: 0;
+    background: url(../images/detail_sprit24.png?8ffc6d7) no-repeat;
+    background-position: 0 -691px;
+}
+.information_addcart .cartbox a {
+    position: relative;
+    float: left;
+    margin-left: 8px;
+    display: block;
+    text-align: center;
+    color: #ec5547;
+}
+.information_addcart .cartbox a.link {
+    color: #06c;
+    font-size: 12px;
+    background: 0;
+    line-height: 76px;
+    font-weight: normal;
+    border: 0;
+}
+//保障
+.information_ensure {
+    border-top: 1px dotted #d9d9d9;
+}
+.information_ensure dt {
+    height: 40px;
+    line-height: 40px;
+}
+.information_ensure dt, .information_ensure dd, .information_ensure dd a {
+    float: left;
+}
+.information_ensure dd {
+    width: 495px;
+    padding: 10px 0;
+}
+.information_ensure dd a {
+    font-weight: normal;
+    margin-right: 20px;
+    color: #666;
+    height: 20px;
+    line-height: 20px;
+}
+.information_ensure dd a .iconDetail {
+    color: #69a519;
+    padding-right: 2px;
+    vertical-align: -1px;
 }
 
 
@@ -890,7 +1217,7 @@ a.y_agreement_btn {
     font-family: 'iconfont-cart';
     src: url("../fonts/iconfont_new.eot?afc307a7?#iefix") format("embedded-opentype"), url("../fonts/iconfont_new.woff?afc307a7") format("woff"), url("../fonts/iconfont_new.ttf") format("truetype"), url("../fonts/iconfont_new.svg#uxiconfont") format("svg")
 }
-s.hd_iconfont {
+.hd_iconfont {
     font-family: "iconfont-cart" !important;
     font-size: 14px;
     font-style: normal;
