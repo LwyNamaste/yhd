@@ -202,10 +202,89 @@ body {
     color: #FF4040;
 }
 //中间轮播图
-.promo_img {
+.lunbo_show {
+    height: 400px;
+    position: relative;
+    z-index: 100;
+    .lunbo_wrap {
+        position: relative;
+        z-index: 1;
+    }
+}
+.lunbo_show .lunbo_wrap li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    a {
+        display: block;
+        width: 1228px;
+        height: 400px;
+        margin: 0 auto;
+    }
+}
+.lunbo_show .lunbo_wrap .promo_img {
     height: 400px;
     margin-left: 205px;
 }
+.lunbo_show .lunbo_num {
+    height: 16px;
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    z-index: 2;
+    width: auto;
+    ol {
+        float: left;
+        position: relative;
+        left: -50%;
+        text-align: right;
+        white-space: nowrap;
+        li {
+            display: inline-block;
+            overflow: hidden;
+            width: 12px;
+            height: 12px;
+            margin: 0 3px;
+            padding: 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}
+.lunbo_show .lunbo_num ol li i {
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 0.7;
+}
+.lunbo_show a.show_next, .lunbo_show a.show_pre {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 178px;
+    left: 50%;
+    z-index: 4;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.4);
+    text-align: center;
+    line-height: 44px;
+}
+.lunbo_show a.show_next {
+    margin-left: 335px;
+}
+.lunbo_show a.show_pre {
+    margin-left: -399px;
+}
+.lunbo_show a.show_next i, .lunbo_show a.show_pre i {
+    font-size: 16px;
+    opacity: 0.3;
+}
+
+
 //右边登录注册
 .log_reg {
     background-image: url(../images/vip_bg2.png);
@@ -345,7 +424,7 @@ body {
 .right_list_wrap a.prev {
     left: -30px;
 }
-.right_list_wrap a.next {
+.right_list_wrap a.next{
     right: 5px;
     background-color: rgba(0,0,0,0.15);
 }
@@ -408,7 +487,7 @@ body {
         white-space: nowrap;
     }
 }
-.pro_pic {
+.num_one_qiang .pro_pic {
     float: right;
     width: 110px;
     height: 110px;
@@ -426,9 +505,6 @@ body {
     text-align: center;
     color: #fff;
 }
-
-
-
 
 //一号闪购
 //左边banner
@@ -1811,25 +1887,6 @@ body {
     font-size: 14px;
     float: left;
 }
-.known_you_like .you_like_list .pro_tag {
-    float: right;
-    margin-top: 5px;
-}
-.known_you_like .you_like_list .goods_icon {
-    width: 30px;
-    height: 16px;
-    line-height: 16px;
-    font-size: 12px;
-    text-align: center;
-    margin-left: 2px;
-}
-.known_you_like .you_like_list .pro_tag .off_icon {
-    float: left;
-    margin-top: 6px;
-    background-color: #fff3fa;
-    color: #ff62a1;
-    border: 1px solid #ffcce0;
-}
 .known_you_like .you_like_list .operate_area {
     display: none;
     margin-top: 2px;
@@ -1846,8 +1903,8 @@ body {
     color: #fff;
 }
 //左侧电梯
-.mod_floor_lift {
-    display: block;
+.elec_floor_lift {
+    display: none;
     position: fixed;
     z-index: 910;
     left: 50%;
@@ -1869,6 +1926,36 @@ body {
         line-height: 18px;
     }
 }
+.elec_floor_lift a:hover{
+    color: #fff;
+}
+.elec_floor_lift .floor_link1:hover {
+    background-color: #645144;
+}
+.elec_floor_lift .floor_link2:hover {
+    background-color: #f78b4b;
+}
+.elec_floor_lift .floor_link3:hover {
+    background-color: #0bcd96;
+}
+.elec_floor_lift .floor_link4:hover {
+    background-color: #ff87d0;
+}
+.elec_floor_lift .floor_link5:hover {
+    background-color: #fe8282;
+}
+.elec_floor_lift .floor_link6:hover {
+    background-color: #925740;
+}
+.elec_floor_lift .floor_link7:hover {
+    background-color: #5c9bf1;
+}
+.elec_floor_lift .floor_link8:hover {
+    background-color: #ff4040;
+}
+
+
+
 //右边侧边栏
 .yhd_prism_wrap {
     position: fixed;
@@ -1982,6 +2069,49 @@ body {
     -moz-osx-font-smoothing: grayscale;
     color: #fff;
 }
+.yhd_prism_nav .prism_icon_wrap {
+    display: block;
+    position: relative;
+    margin-top: 5px;
+    text-decoration: none;
+}
+.prism_yhd_code {
+    display: none;
+    left: -168px;
+    top: -122px;
+    width: 130px;
+    padding: 15px 10px;
+    line-height: 24px;
+    text-align: left;
+    font-size: 14px;
+    p {
+        height: 40px;
+        overflow: hidden;
+        line-height: 20px;
+    }
+}
+.prism_yhd_code img {
+    display: block;
+    width: 93px;
+    height: 93px;
+    margin: 10px auto 0;
+}
+.prism_tips_wrap .tips_arrow {
+    position: absolute;
+    top: 30px;
+    right: -12px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    line-height: 0;
+    border-color: transparent transparent transparent #fff;
+    border-style: dashed dashed dashed solid;
+    border-width: 6px;
+}
+.prism_yhd_code .tips_arrow {
+    top: 130px;
+}
+
 
 
 //底部
