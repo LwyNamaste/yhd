@@ -5,6 +5,8 @@
 	//第二个参数：选择器。
 	$('.footercontent').load('footer.html .ft_wrap');
 }(jQuery);
+
+//数据拼接部分
 !function($){
 	//懂你想要部分数据
 			$.ajax({
@@ -53,8 +55,27 @@
 					})
 					$('.num_one_qiang ul').html($str);
 				});
+				//轮播图的数据
+					$.ajax({
+						url: 'http://10.31.162.12/yhd/php/lunbo.php',
+						dataType: 'json'
+					}).done(function(data) {
+						console.log(data);
+						$str='';
+						$.each(data,function(index,item){
+							$str+=`<li style="z-index: 0;">
+								<a href="#" target="_blank" title="${item.title}">
+									<div class="promo_img" style="background-image: ${item.url}"></div>
+								</a>
+							</li>`;
+						})
+						$('.lunbo_show ul').html($str);						
+					});
        
 }(jQuery);
+
+
+//效果部分
 !function ($){
 //顶部广告的效果
 	var $indextopbanner=$('.index_topbanner');
@@ -123,11 +144,74 @@
 			scrollTop: $top
 		});
 	});
-
-
-
-//幻灯片的效果
+//轮播图效果
+		var $lunbo=$('.lunbo_show');		
+		var $pic=$('.lunbo_show ul');
+		var $btnLi=$('.lunbo_show ol li');
+		var $leftbtn=$('.show_prev');	
+		var $rightbtn=$('.show_next');	
+		
+		var $index=0;//当前的索引.
+		var $qindex=0;//前一个索引.
+		//鼠标经过小按钮
+   		 $btnLi.on('mouseover', function (){
+			$index=$(this).index();//当前的索引   	
+			imgchange($index);
+			$qindex=$index;//当前的索引变成上一个索引. 
+    });
+    //左右按钮
+    	$rightbtn.on('click',function(){
+		$index++;
+		if($index>6){
+			$index=0;
+		}
+		imgchange($index);
+		$qindex=$index;//当前的索引变成上一个索引.
+	});
 	
+	$leftbtn.on('click',function(){
+		$index--;
+		if($index<0){
+			$qindex=0;
+			$index=6;
+		}
+		imgchange($index);
+		$qindex=$index;//当前的索引变成上一个索引.
+	});
+	//自动切换
+		var $timer = setInterval(function() {
+				$index++;
+				if($index > 6) {
+					$index = 0;
+				}
+				imgchange($index);
+				$qindex = $index; //当前的索引变成上一个索引.
+		}, 2000);
+		$lunbo.on('mouseover',function(){
+			clearInterval($timer);
+		});
+		$lunbo.on('mouseout',function(){
+			$timer = setInterval(function() {
+					$index++;
+					if($index > 6) {
+						$index = 0;
+					}
+					imgchange($index);
+					$qindex = $index; //当前的索引变成上一个索引.
+			}, 2000);
+		});
+
+//封装切换
+	function imgchange($index){
+	$btnLi.eq($index).addClass('active').siblings('li').removeClass('active');
+        $pic.children('li').eq($index).animate({
+            opacity: 1
+        }, 300).siblings(($pic).children('li')).animate({
+            opacity: 0
+        }, 300)
+	}
+
+
 //tab切换的效果
 	
 //懂你想要的效果

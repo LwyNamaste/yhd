@@ -2,21 +2,21 @@
 @import "header";
 @import "footer";
 //注册中间表单
-.y_regist_wrap {
+.yhd_regist {
     position: relative;
     border-bottom: 1px solid #f4f4f4;
     background: #fcfcfc;
     padding: 30px 0 40px;
 }
 
-.y_regist_model {
+.yhd_regist_wrap {
     position: relative;
     z-index: 150;
     width: 330px;
     margin: 0 auto;
 }
 
-.y_regist_tit {
+.register_title {
     text-align: center;
     font-weight: bold;
     font-size: 24px;
@@ -24,14 +24,14 @@
     color: #333;
 }
 
-.y_regist_form li {
+.register_form li {
     position: relative;
     min-height: 52px;
     margin-top: 10px;
     margin-right: -200px;
 }
 
-.y_regist_form .y_same_item {
+.register_form .y_same_item {
     position: relative;
     z-index: 2;
     width: 328px;
@@ -40,14 +40,14 @@
     border-radius: 3px;
 }
 
-.y_regist_form .ysame_input {
+.register_form .ysame_input {
     position: relative;
     z-index: 2;
     width: 288px;
     height: 20px;
     margin-top: 15px;
     padding: 0px 20px;
-    background: 0;
+    background-color: #fff;
     border: 0;
     outline: 0;
     font-size: 14px;
@@ -55,7 +55,7 @@
     color: #666;
 }
 
-.y_regist_form .y_same_label {
+.register_form .y_same_label {
     position: absolute;
     left: 20px;
     top: 0px;
@@ -81,8 +81,7 @@
     background: #e4e4e4;
 }
 
-.y_regist_tips .y_regtip_rel i,
-.y_regist_tips_keywords .y_regtip_rel i {
+.y_regist_tips .y_regtip_rel i{
     position: absolute;
     left: -10px;
     top: 50%;
@@ -114,16 +113,16 @@
     background: url(../images/regist_new.png?89c7455) no-repeat -50px 0;
 }
 
-.y_regist_form .ishort_li .y_same_item,
-.y_regist_form .short_opacity_bg {
+.register_form .ishort_li .y_same_item,
+.register_form .short_opacity_bg {
     width: 192px;
 }
 
-.y_regist_form .ishort_li .y_same_item .ysame_input {
+.register_form .ishort_li .y_same_item .ysame_input {
     width: 152px;
 }
 
-.y_regist_form .r_yzm_code {
+.register_form .r_yzm_code {
     position: relative;
     z-index: 2;
     display: inline-block;
@@ -133,14 +132,14 @@
     border-radius: 2px;
 }
 
-.y_regist_form .r_yzm_code img {
+.register_form .r_yzm_code img {
     width: 124px;
     height: 50px;
     border: 1px solid #dedede;
     border-radius: 2px;
 }
 
-.y_regist_form .same_code_btn {
+.register_form .same_code_btn {
     position: relative;
     z-index: 2;
     width: 126px;
@@ -154,22 +153,6 @@
     border-radius: 2px;
     font-size: 14px;
 }
-
-.y_regist_tips_keywords {
-    display: none;
-    position: absolute;
-    left: 348px;
-    top: 9px;
-    font-size: 12px;
-    color: #fff;
-}
-
-.y_regist_tips_keywords .y_regtip_rel {
-    width: 120px;
-    padding: 10px;
-    background: #e4e4e4;
-}
-
 .y_agreement_word {
     height: 35px;
     font-size: 12px;
@@ -184,7 +167,8 @@
     font-size: 12px;
 }
 
-a.y_agreement_btn {
+.y_agreement_btn {
+    border: 0;
     display: block;
     width: 330px;
     height: 52px;
@@ -217,22 +201,35 @@ a.y_agreement_btn {
     padding: 26px 0 0;
     background: url(../images/regist_topshadow.png?89c7455) repeat-x;
 }
+.login_wrap .errortips{
+    position: absolute;
+    top: 9px;
+    left: 35px;
+    width: 282px;
+    height: 30px;
+    overflow: hidden;
+    padding: 0 10px 0 36px;
+    border: 1px solid #e5debc;
+    border-radius: 2px;
+    background: #fff7d1 url(../images/login.png?f8e2054) no-repeat -324px -150px;
+    line-height: 30px;
+    color: #999;
+}
 
 .login_wrap .wrap {
     width: 980px;
     margin: 0 auto;
 }
 
-.mod_login_wrap {
+.yhd_login_wrap {
     position: relative;
-    _display: inline;
     float: right;
     width: 330px;
     padding: 45px 35px 0 35px;
     background-color: #fff;
 }
 
-.mod_login_wrap h3 {
+.yhd_login_wrap h3 {
     float: left;
     font-size: 14px;
     color: #666;
@@ -240,17 +237,17 @@ a.y_agreement_btn {
     line-height: 30px;
 }
 
-.mod_login_wrap .regist_new {
+.yhd_login_wrap .regist_new {
     float: right;
     line-height: 30px;
 }
 
-.mod_login_wrap .login_form {
+.yhd_login_wrap .login_form {
     position: relative;
     padding: 0 0 18px;
 }
 
-.mod_login_wrap .form_item_wrap {
+.yhd_login_wrap .form_item_wrap {
     width: 330px;
     margin: 0 auto;
     .form_item {
@@ -265,51 +262,49 @@ a.y_agreement_btn {
     }
 }
 
-.mod_login_wrap .form_item_wrap .form_item label {
+.yhd_login_wrap .form_item_wrap .form_item label {
     display: inline-block;
     width: 42px;
     vertical-align: middle;
     color: #666;
 }
 
-.mod_login_wrap .form_item_wrap .form_item .user_ico {
+.yhd_login_wrap .form_item_wrap .form_item .user_ico {
     background: url(../images/login_new.png?89c7455) no-repeat -50px 4px;
 }
 
-.mod_login_wrap .form_item_wrap .form_item .paswd_ico {
+.yhd_login_wrap .form_item_wrap .form_item .paswd_ico {
     background: url(../images/login_new.png?89c7455) no-repeat -150px 4px;
 }
 
-.mod_login_wrap .form_item_wrap .form_item .ipt {
+.yhd_login_wrap .form_item_wrap .form_item .ipt {
     width: 230px;
     height: 24px;
     padding-left: 3px;
     border: 0 none;
     line-height: 24px;
     vertical-align: middle;
-    font-family: "Microsoft YaHei";
     font-size: 14px;
 }
 
-.mod_login_wrap .form_item_wrap .form_item .gay_text {
-    color: #ccc;
+.yhd_login_wrap .form_item_wrap .form_item .gay_text {
+    color: #333;
 }
 
-.mod_login_wrap .form_item_wrap .auto_login {
+.yhd_login_wrap .form_item_wrap .auto_login {
     position: relative;
     margin: 10px 0;
     line-height: 24px;
     min-height: 24px;
 }
 
-.mod_login_wrap .form_item_wrap .auto_tips {
+.yhd_login_wrap .form_item_wrap .auto_tips {
     float: left;
     margin-left: 7px;
-    _display: inline;
     color: red;
 }
 
-.mod_login_wrap .form_item_wrap .login_btn {
+.yhd_login_wrap .form_item_wrap .login_btn {
     width: 330px;
     height: 52px;
     border: 0 none;
@@ -322,21 +317,23 @@ a.y_agreement_btn {
     line-height: 52px;
 }
 
-.mod_login_wrap .form_item_wrap a.uncheck_agreement {
+.yhd_login_wrap .form_item_wrap a.uncheck_agreement {
     float: left;
     padding-left: 18px;
-    background: url(../images/login.png?89c7455) no-repeat -347px -265px;
+    background: url(../images/login.png?89c7455) no-repeat -347px -264px;
+    color: #999;
+}
+.yhd_login_wrap .form_item_wrap a.uncheck_agreement:hover{
+  background: url(../images/login.png?89c7455) no-repeat -347px -294px;
+}
+.yhd_login_wrap .form_item_wrap a.check_agreement {
+    float: left;
+    padding-left: 18px;
+    background: url(../images/login.png?89c7455) no-repeat -347px -324px;
     color: #999;
 }
 
-.mod_login_wrap .form_item_wrap a.check_agreement {
-    float: left;
-    padding-left: 18px;
-    background: url(../images/login.png?89c7455) no-repeat -347px -325px;
-    color: #999;
-}
-
-.mod_login_wrap .form_item_wrap a.forget_pswd {
+.yhd_login_wrap .form_item_wrap a.forget_pswd {
     position: absolute;
     right: 0;
     top: 0;
@@ -348,12 +345,12 @@ a.y_agreement_btn {
     z-index: 10;
 }
 
-.mod_login_wrap .joint_landing_wrap p {
+.yhd_login_wrap .joint_landing_wrap p {
     padding: 15px 0;
     color: #666;
 }
 
-.mod_login_wrap .joint_landing_wrap .account_list {
+.yhd_login_wrap .joint_landing_wrap .account_list {
     float: left;
     width: 230px;
     li {
@@ -362,7 +359,7 @@ a.y_agreement_btn {
     }
 }
 
-.mod_login_wrap .joint_landing_wrap .account_list a.iconfont {
+.yhd_login_wrap .joint_landing_wrap .account_list a.iconfont {
     display: inline-block;
     width: 32px;
     height: 35px;
@@ -370,32 +367,31 @@ a.y_agreement_btn {
     line-height: 35px;
 }
 
-.mod_login_wrap .joint_landing_wrap .qq {
+.yhd_login_wrap .joint_landing_wrap .qq {
     color: #10a8ff;
 }
 
-.mod_login_wrap .joint_landing_wrap .jingdong {
+.yhd_login_wrap .joint_landing_wrap .jingdong {
     position: relative;
     top: 2px;
     color: #c81825;
 }
 
-.mod_login_wrap .joint_landing_wrap .weixin {
+.yhd_login_wrap .joint_landing_wrap .weixin {
     color: #0c0;
 }
 
-.mod_login_wrap .joint_landing_wrap .sina {
+.yhd_login_wrap .joint_landing_wrap .sina {
     color: #dd2e37;
 }
 
-.mod_login_wrap .joint_landing_wrap .unfold {
+.yhd_login_wrap .joint_landing_wrap .unfold {
     float: right;
     display: block;
     line-height: 34px;
     color: #999;
 }
-
-.mod_login_wrap .joint_landing_wrap .unfold i {
+.yhd_login_wrap .joint_landing_wrap .unfold i {
     display: inline-block;
     width: 20px;
     height: 26px;
@@ -404,48 +400,51 @@ a.y_agreement_btn {
     background: url(../images/login_new.png?89c7455) no-repeat -200px 3px;
     vertical-align: middle;
 }
+.yhd_login_wrap .joint_landing_wrap .fold i {
+    background-position: -250px 3px;
+}
 
-.mod_login_wrap .more_landing {
+.yhd_login_wrap .more_landing {
     margin-top: 15px;
 }
 
-.mod_login_wrap .more_landing li {
+.yhd_login_wrap .more_landing li {
     float: left;
     width: 82px;
     margin: 0 0 10px 0;
     line-height: 16px;
 }
 
-.mod_login_wrap .more_landing a {
+.yhd_login_wrap .more_landing a {
     color: #999;
     line-height: 16px;
 }
 
-.mod_login_wrap .more_landing a i {
+.yhd_login_wrap .more_landing a i {
     margin-right: 4px;
 }
 
-.mod_login_wrap .joint_landing_wrap .alipay {
+.yhd_login_wrap .joint_landing_wrap .alipay {
     color: #00b2ee;
 }
 
-.mod_login_wrap .joint_landing_wrap .wangyi {
+.yhd_login_wrap .joint_landing_wrap .wangyi {
     color: #c4282b;
 }
 
-.mod_login_wrap .joint_landing_wrap .baidu {
+.yhd_login_wrap .joint_landing_wrap .baidu {
     color: #2932e1;
 }
 
-.mod_login_wrap .joint_landing_wrap .renren {
+.yhd_login_wrap .joint_landing_wrap .renren {
     color: #005eac;
 }
 
-.mod_login_wrap .joint_landing_wrap .pingan {
+.yhd_login_wrap .joint_landing_wrap .pingan {
     color: #ff3204;
 }
 
-.mod_login_wrap .joint_landing_wrap .mogujie {
+.yhd_login_wrap .joint_landing_wrap .mogujie {
     color: #e84478;
 }
 
