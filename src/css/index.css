@@ -97,6 +97,10 @@
   color: #666;
 }
 
+.topbar_right a:hover {
+  color: #ff4040;
+}
+
 .h_top_bar .topbar_right li i.hd_iconfont {
   width: 14px;
   height: 30px;
@@ -267,7 +271,6 @@
   position: relative;
   z-index: 501;
   padding: 2px;
-  _padding: 2px 2px 0px 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
   background-color: #ff4040;
@@ -1093,6 +1096,11 @@ body {
   float: right;
   width: 110px;
   height: 110px;
+  transition: all 0.4s ease;
+}
+
+.num_one_qiang .right_list li a:hover .pro_pic {
+  transform: translate3d(-5px, 0, 0);
 }
 
 .right_list ul li .marking_label {
@@ -1114,7 +1122,6 @@ body {
 }
 .num_one_shan .left_banner {
   position: relative;
-  _display: inline;
   float: left;
   width: 267px;
   height: 400px;
@@ -1257,6 +1264,7 @@ body {
   position: absolute;
   right: 18px;
   bottom: 10px;
+  transition: all 0.4s ease;
 }
 .fr .group_brand {
   position: relative;
@@ -1272,6 +1280,11 @@ body {
   position: absolute;
   right: 18px;
   bottom: 15px;
+  transition: all 0.4s ease;
+}
+
+.num_one_shan .group_buy .fr a:hover img {
+  transform: translate3d(-5px, 0, 0);
 }
 
 .num_one_shan .group_buy .group_tit {
@@ -1327,7 +1340,6 @@ body {
 }
 .num_one_shan .area_rank a.more span {
   margin-left: 5px;
-  font-family: "\5b8b\4f53";
 }
 
 .num_one_shan .area_rank_list {
@@ -1394,6 +1406,11 @@ body {
   bottom: 29px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+}
+
+.num_one_shan .rank_content a:hover {
+  text-decoration: none;
+  color: #ff4040;
 }
 
 .num_one_shan .rank_content li img {
@@ -1767,6 +1784,11 @@ body {
   font-size: 14px;
 }
 
+.global_imported .left_banner li a:hover {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
 .global_imported .center_con {
   float: left;
   width: 609px;
@@ -1788,6 +1810,7 @@ body {
   height: 220px;
   margin-bottom: 1px;
   background-color: #fff;
+  transition: all 0.4s ease;
 }
 .global_imported .global_pic img {
   width: 405px;
@@ -1817,6 +1840,19 @@ body {
   background-color: #fff;
   font-size: 14px;
   line-height: 24px;
+  transition: all 0.4s ease;
+}
+
+.global_imported .center_con a:hover {
+  z-index: 105;
+  -webkit-box-shadow: 0 0 5px #bdbcbc;
+  -moz-box-shadow: 0 0 5px #bdbcbc;
+  box-shadow: 0 0 5px #bdbcbc;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .global_imported .global_category {
@@ -1834,6 +1870,11 @@ body {
   bottom: 0;
   width: 100px;
   height: 100px;
+  transition: all 0.4s ease;
+}
+
+.global_imported .global_category a:hover img {
+  transform: translate3d(-5px, 0, 0);
 }
 
 .global_imported .global_category .jk_mh {
@@ -2759,14 +2800,25 @@ body {
   position: relative;
   margin-top: 5px;
 }
-
+.yhd_prism_nav .prism_icon_wrap a:hover .prism_icon_tab {
+    background-color: #ff5c4d;
+}
+.yhd_prism_nav .prism_icon_wrap a:hover .prism_icon_tab .prism_iconfont {
+    color: #fff;
+}
+.yhd_prism_nav .prism_icon_wrap a:hover .prism_icon_text {
+    right: 34px;
+    background-color: #ff5c4d;
+}
 .yhd_prism_nav a.prism_cart_tab {
   display: block;
   padding: 12px 0;
   background: #454545;
   text-align: center;
 }
-
+.yhd_prism_nav a.prism_cart_tab:hover {
+    background-color: #ff5c4d;
+}
 .yhd_prism_nav .prism_icon_tab {
   position: relative;
   z-index: 10;
@@ -2789,6 +2841,8 @@ body {
   line-height: 32px;
   color: #fff;
   white-space: nowrap;
+  text-decoration: none;
+  transition: all .3s ease-in-out .1s;
 }
 
 .yhd_prism_nav a.prism_cart_tab .prism_cart_text {
@@ -2817,23 +2871,24 @@ body {
   margin-top: 5px;
   text-decoration: none;
 }
-
+.yhd_prism_nav .erwei_block:hover .prism_yhd_code{
+	display: block;
+}
 .prism_yhd_code {
+	position: absolute;
   display: none;
-  left: -168px;
+  right: 45px;
   top: -122px;
   width: 130px;
   padding: 15px 10px;
   line-height: 24px;
-  text-align: left;
   font-size: 14px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+  border: 1px solid #ccc;
+  background-color: #fff;
+  text-align: center;
+  color: #333;
 }
-.prism_yhd_code p {
-  height: 40px;
-  overflow: hidden;
-  line-height: 20px;
-}
-
 .prism_yhd_code img {
   display: block;
   width: 93px;

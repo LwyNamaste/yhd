@@ -385,13 +385,13 @@
     color: #dd2e37;
 }
 
-.yhd_login_wrap .joint_landing_wrap .unfold {
+.yhd_login_wrap .joint_landing_wrap .unfold,.yhd_login_wrap .joint_landing_wrap .fold {
     float: right;
     display: block;
     line-height: 34px;
     color: #999;
 }
-.yhd_login_wrap .joint_landing_wrap .unfold i {
+.yhd_login_wrap .joint_landing_wrap .unfold i,.yhd_login_wrap .joint_landing_wrap .fold i {
     display: inline-block;
     width: 20px;
     height: 26px;
@@ -578,15 +578,16 @@
 }
 
 #bf {
-    width: 400px;
-    height: 500px;
+    z-index: 999;
+    width: 450px;
+    height: 450px;
     border: 1px solid #000;
     float: left;
     overflow: hidden;
-    position: relative;
-    left: 10px;
-//  visibility: hidden;
-    display: none;
+    position: absolute;
+    left: 410px;
+    top: 0;
+    visibility: hidden;
 }
 
 #bf img {
@@ -599,9 +600,10 @@
     position: absolute;
     left: 0px;
     bottom: 15px;
-    width: 402px;
+    width: 375px;
     height: 56px;
     overflow: hidden;
+    margin-left: 12px;
 }
 
 #ulist a {
@@ -627,11 +629,12 @@
         position: absolute;
         left: 0px;
         top: 0px;
+        width: 9999px;
         li {
             float: left;
             width: 56px;
             height: 56px;
-            padding-right: 6px;
+            padding-right: 15px;
             img {
                 width: 52px;
                 height: 52px;

@@ -34,23 +34,24 @@
 					})
 				});
 				//效果部分
-				var $account_list=$('.more_landing li');
-				$('.unfold').on('click',function(){
-					$(this).addClass('fold');
-					$account_list.css('display','block');
-					$('.fold').on('click',function(){
-					$(this).addClass('unfold').removeClass('fold');
-					$account_list.css('display','none');
-					});
+				$('.more_coop a').on('click',function(){
+					if($(this).hasClass("unfold")){
+						$(this).addClass('fold').removeClass('unfold');
+						$('.more_landing li').css('display','block');						
+					}else if($(this).hasClass("fold")){
+						$(this).addClass('unfold').removeClass('fold');
+						$('.more_landing li').css('display','none');						
+					}
 				});
 				
-				$('.uncheck_agreement').on('click',function(){
-					$(this).addClass('check_agreement').removeClass('uncheck_agreement');
-					$('.auto_tips').css('display','block');
-					$('.check_agreement').on('click',function(){
+				$('.auto_login a').on('click',function(){
+					if($(this).hasClass("uncheck_agreement")){
+						$(this).addClass('check_agreement').removeClass('uncheck_agreement');
+						$('.auto_tips').css('display','block');
+					}else if($(this).hasClass("check_agreement")){
 						$(this).addClass('uncheck_agreement').removeClass('check_agreement');
 						$('.auto_tips').css('display','none');
-					});
+					}
 				});
 
 }(jQuery);

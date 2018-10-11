@@ -1,6 +1,39 @@
 !function($){
 //1.导入模块的公用部分	
-	$('.h_header').load('header.html .h_header_wrap');
+	$('.h_header').load('header.html .h_header_wrap',function(){
+			function addCookie(key,value,day){
+				var date=new Date();//创建日期对象
+				date.setDate(date.getDate()+day);//过期时间：获取当前的日期+天数，设置给date
+				document.cookie=key+'='+encodeURI(value)+';expires='+date;//添加cookie，设置过期时间
+			}
+			function getCookie(key){
+				var str=decodeURI(document.cookie);
+				var arr=str.split('; ');
+				for(var i=0;i<arr.length;i++){
+					var arr1=arr[i].split('=');
+	 				if(arr1[0]==key){
+						return arr1[1];
+					}
+				}
+			}
+			function delCookie(key,value){
+				addCookie(key,value,-1);//添加的函数,将时间设置为过去时间
+			}
+			
+			
+			//显示隐藏
+			$(function(){
+				if(getCookie('UserName')){
+					$('.login').hide();
+					$('.admin').show().find('span').html('Hi,'+getCookie('UserName'));
+				}
+				$('.admin a').on('click',function(){
+					delCookie('UserName','',-1);
+					$('.admin').hide();
+					$('.login').show();
+				});
+			});
+	});
 	//第一个参数：地址。
 	//第二个参数：选择器。
 	$('.footercontent').load('footer.html .ft_wrap');
@@ -17,9 +50,9 @@
 				$str='';
 				$.each(data,function(index,item){
 					$str+=`<li>
-						<a href="#" target="_blank">
+						<a href="http://10.31.162.12/yhd/src/details.html?sid=${item.sid}" target="_blank">
 							<div class="flip_wrap">
-								<div class="pro_pic"><img src="${item.url}"></div>
+								<div class="pro_pic"><img src="${item.url.split(',')[0]}"></div>
 								<div class="pro_name">
 									<p class="pro_mask"></p>${item.title}</div>
 								<div class="clearfix">

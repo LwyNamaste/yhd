@@ -500,6 +500,10 @@ body {
     float: right;
     width: 110px;
     height: 110px;
+    transition: all 0.4s ease;
+}
+.num_one_qiang .right_list li a:hover .pro_pic {
+    transform: translate3d(-5px,0,0);
 }
 .right_list ul li .marking_label{
     position: absolute;
@@ -521,7 +525,6 @@ body {
     margin-top: 20px;
     .left_banner {
         position: relative;
-        _display: inline;
         float: left;
         width: 267px;
         height: 400px;
@@ -640,40 +643,45 @@ body {
         }
     }
 }
-        .fr {
-            float: right;
-            .group_variety {
-                position: relative;
-                width: 232px;
-                margin-top: 18px;
-                a {
-                    display: block;
-                    height: 180px;
-                    margin: 0 18px 0 20px;
-                    border-bottom: 1px solid #f0f0f0;
-                    img {
-                        position: absolute;
-                        right: 18px;
-                        bottom: 10px;
-                    }
-                }
-            }
-            .group_brand {
-                position: relative;
-                float: left;
-                width: 232px;
-                a {
-                    display: block;
-                    height: 161px;
-                    padding: 0 18px 0 20px;
-                    img {
-                        position: absolute;
-                        right: 18px;
-                        bottom: 15px;
-                    }
-                }
+.fr {
+    float: right;
+    .group_variety {
+        position: relative;
+        width: 232px;
+        margin-top: 18px;
+        a {
+            display: block;
+            height: 180px;
+            margin: 0 18px 0 20px;
+            border-bottom: 1px solid #f0f0f0;
+            img {
+                position: absolute;
+                right: 18px;
+                bottom: 10px;
+                transition: all 0.4s ease;               
             }
         }
+    }
+    .group_brand {
+        position: relative;
+        float: left;
+        width: 232px;
+        a {
+            display: block;
+            height: 161px;
+            padding: 0 18px 0 20px; 
+            img {
+                position: absolute;
+                right: 18px;
+                bottom: 15px;
+                transition: all 0.4s ease;
+            }
+        }
+    }
+}
+.num_one_shan .group_buy .fr a:hover img {
+    transform: translate3d(-5px,0,0);
+}
 .num_one_shan .group_buy .group_tit {
     height: 18px;
     margin-bottom: 10px;
@@ -722,7 +730,6 @@ body {
     font-size: 12px;
     span {
         margin-left: 5px;
-        font-family: "\5b8b\4f53";
     }
 }
 .num_one_shan .area_rank_list {
@@ -785,6 +792,10 @@ body {
             }
         }
     }
+}
+.num_one_shan .rank_content a:hover {
+    text-decoration: none;
+    color: #ff4040;
 }
 .num_one_shan .rank_content li img {
     width: 100px;
@@ -1132,6 +1143,10 @@ body {
         font-size: 14px;
     }
 }
+.global_imported .left_banner li a:hover {
+    border: 1px solid rgba(255,255,255,0.35);
+    background-color: rgba(255,255,255,0.25);
+}
 //中间
 .global_imported .center_con {
     float: left;
@@ -1152,6 +1167,7 @@ body {
     height: 220px;
     margin-bottom: 1px;
     background-color: #fff;
+    transition: all 0.4s ease;   
     img {
         width: 405px;
         height: 220px;
@@ -1177,6 +1193,18 @@ body {
     background-color: #fff;
     font-size: 14px;
     line-height: 24px;
+    transition: all 0.4s ease;
+}
+.global_imported .center_con a:hover {
+    z-index: 105;
+    -webkit-box-shadow: 0 0 5px #bdbcbc;
+    -moz-box-shadow: 0 0 5px #bdbcbc;
+    box-shadow: 0 0 5px #bdbcbc;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
 }
 //右边
 .global_imported .global_category {
@@ -1192,6 +1220,10 @@ body {
     bottom: 0;
     width: 100px;
     height: 100px;
+    transition: all 0.4s ease;
+}
+.global_imported .global_category a:hover img {
+    transform: translate3d(-5px,0,0);
 }
 .global_imported .global_category .jk_mh {
     background-color: #ffe6ee;

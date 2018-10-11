@@ -94,6 +94,9 @@
 .topbar_right .hd_menu a{
     color:#666;
 }
+.topbar_right a:hover{
+    color: #ff4040
+}
 .h_top_bar .topbar_right li i.hd_iconfont {
     width: 14px;
     height: 30px;
@@ -237,7 +240,6 @@
     position: relative;
     z-index: 501;
     padding: 2px;
-    _padding: 2px 2px 0px 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
     background-color: #ff4040;
