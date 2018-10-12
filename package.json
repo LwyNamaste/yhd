@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "gulp-uglify": "^3.0.1",
+    "webpack": "^4.20.2"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

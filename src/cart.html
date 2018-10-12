@@ -28,17 +28,20 @@
 		    </div>
 			<div class="search">
 				<input id="keyword" type="text" placeholder="请输入关键词">
-				<a href="#" class="search_btn"><i class="hd_iconfont"></i></a>
-					
-				
+				<a href="#" class="search_btn"><i class="hd_iconfont"></i></a>				
 			</div>
 		</div>
 		<div class="wrap">
+			<!--购物车为空时显示的盒子-->
+			<div class="empty-cart">
+				<div class="empty-cart-msg">
+					购物车空空的哦~，去看看心仪的商品吧~
+					<a href="">去购物></a>
+				</div>
+			</div>			
 			<div class="cart_list_header cart_wrap cart_tit"> 
 				<span class="checkbox">
-					<a href="javascript:;" class="check check_all">
-						<!--<i class="iconfont"></i>-->
-					</a>
+					<input type="checkbox" checked="" name="" id="" class="allsel check check_all" value="">			
 					全选
 				</span>
 				<span class="tit">商品信息</span>
@@ -47,6 +50,96 @@
 				<span class="total">小计（元）</span>
 				<span class="act">操作</span>
 			</div>
+			<div id="cart-list">
+				<div class="cart-item-list">
+					<div class="cart-tbody">
+						<div class="shop">
+							<div class="cart-checkbox">
+								<input type="checkbox" checked="" name="" id="" value="">
+							</div>
+							<span class="shop-info">
+								<a href=""></a>
+							</span>
+							<div class="shop-ex">
+								购满￥99.00 已免运费
+								<span class="tips-icon" data-tips="部分超重超大商品运费单独收取，不在本功能范围内，准确运费以结算页为准"></span>
+							</div>
+						</div>
+						<div class="item-list">
+							<div class="item-head">
+								<div class="header-left">
+									<a class="header-left-p1" href="">
+										<span>
+											换购
+											<b></b>
+										</span> 活动商品已购满999.00元，可加价换购商品10件&gt;
+									</a>
+									<a class="header-left-p2" href="">换购商品</a>
+									<a href="">去凑单 &gt;</a>
+								</div>
+								<div class="header-price">
+									<b></b>
+								</div>
+							</div>
+							<div class="goods-item goods-item-sele" style="display: none;">
+								<div class="goods-info">
+									<div class="cell b-checkbox">
+										<div class="cart-checkbox">
+											<input type="checkbox" checked="" name="" id="" value="">
+											<span class="line-circle"></span>
+										</div>
+									</div>
+									<div class="cell b-goods">
+										<div class="goods-name">
+											<div class="goods-pic">
+												<a href=""><img src="images/rBEhVVJ3VY8IAAAAAAG_9yE_xEwAAFBZQCT4x0AAcAP271.jpg" alt="" sid="3"></a>
+											</div>
+											<div class="goods-msg">
+												<div class="goods-d-info">
+													<a href="">Apple iPad Air 平板电脑 9.7英寸（16G WLAN版/A7芯片/Retina显示屏 MD788CH）银色</a>
+												</div>
+												<div class="goods-ex">
+													<span class="promise"></span>
+													<span class="promise">
+														<i></i>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cell b-props">
+										<div class="prop-text">尺码：27英寸Retina 5K 显示屏</div>
+									</div>
+									<div class="cell b-price">
+										<strong>2099.00</strong>
+										<a class="sales-promotion" href="">
+											促销优惠
+											<b></b>
+										</a>
+										<div class="sales-promotion-dropdown">
+										</div>
+									</div>
+									<div class="cell b-quantity">
+										<div class="quantity-form">
+											<a class="quantity-down" href="javascript:void(0)">-</a>
+											<input type="text" value="1">
+											<a class="quantity-add" href="javascript:void(0)">+</a>
+										</div>
+										<div class="quantity-text">有货</div>
+									</div>
+									<div class="cell b-sum">
+										<strong>2099.00</strong>
+									</div>
+									<div class="cell b-action">
+										<a href="javascript:void(0)">删除</a>
+										<a href="javascript:void(0)">移到我的关注</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
 		</div>
 	</div>
 	<!--导入底部-->

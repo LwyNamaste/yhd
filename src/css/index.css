@@ -2769,7 +2769,7 @@ body {
   position: absolute;
   z-index: 910;
   top: 0;
-  left: 0;
+  left: 34px;
   width: 34px;
   height: 100%;
   background-color: #303030;
@@ -2800,25 +2800,31 @@ body {
   position: relative;
   margin-top: 5px;
 }
+
 .yhd_prism_nav .prism_icon_wrap a:hover .prism_icon_tab {
-    background-color: #ff5c4d;
+  background-color: #ff5c4d;
 }
+
 .yhd_prism_nav .prism_icon_wrap a:hover .prism_icon_tab .prism_iconfont {
-    color: #fff;
+  color: #fff;
 }
+
 .yhd_prism_nav .prism_icon_wrap a:hover .prism_icon_text {
-    right: 34px;
-    background-color: #ff5c4d;
+  right: 34px;
+  background-color: #ff5c4d;
 }
+
 .yhd_prism_nav a.prism_cart_tab {
   display: block;
   padding: 12px 0;
   background: #454545;
   text-align: center;
 }
+
 .yhd_prism_nav a.prism_cart_tab:hover {
-    background-color: #ff5c4d;
+  background-color: #ff5c4d;
 }
+
 .yhd_prism_nav .prism_icon_tab {
   position: relative;
   z-index: 10;
@@ -2871,11 +2877,13 @@ body {
   margin-top: 5px;
   text-decoration: none;
 }
-.yhd_prism_nav .erwei_block:hover .prism_yhd_code{
-	display: block;
+
+.yhd_prism_nav .erwei_block:hover .prism_yhd_code {
+  display: block;
 }
+
 .prism_yhd_code {
-	position: absolute;
+  position: absolute;
   display: none;
   right: 45px;
   top: -122px;
@@ -2883,12 +2891,13 @@ body {
   padding: 15px 10px;
   line-height: 24px;
   font-size: 14px;
-  box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
   border: 1px solid #ccc;
   background-color: #fff;
   text-align: center;
   color: #333;
 }
+
 .prism_yhd_code img {
   display: block;
   width: 93px;

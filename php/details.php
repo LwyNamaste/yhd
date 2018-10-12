@@ -3,7 +3,7 @@
 	include "conn.php";
 	
 	if(isset($_GET['sid'])){
-		$sid=$_GET['sid'];//获取前端传入的sid
+		$sid=$_GET['sid'];
 	}
 	$result=mysql_query("select * from known_youwant where sid='$sid'");	
 	$known_detaillist=array();

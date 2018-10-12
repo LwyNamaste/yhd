@@ -243,7 +243,16 @@
             opacity: 0
         }, 300)
 	}
-
+//右边侧边栏效果
+$('.yhd_prism_wrap').hover(function(){
+	$('.yhd_prism_nav').animate({
+		left:0
+	},300);
+},function(){
+	$('.yhd_prism_nav').animate({
+		left:34
+	},300);	
+});
 
 //tab切换的效果
 	
