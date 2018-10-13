@@ -1,6 +1,5 @@
 <?php  
 	header('content-type:text/html;charset=utf-8');
-	//定义常量：值不能改变
 	define('HOSTNAME','localhost');
 	define('USERNAME','root');
 	define('PASSWORD','');

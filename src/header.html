@@ -66,17 +66,23 @@
 				<div class="clearfix">
 					<div class="hd_head_search" style="z-index: 501;">
 						<div class="hd_search_form" style="top: 0px;">
-							<div class="hd_fixed_wrap">
+							<div class="hd_fixed_wrap wrap">
+								<a href="//www.yhd.com" class="hd_fixed_logo"><img src="//d7.yihaodianimg.com/N09/M09/85/8D/ChEi11jziUSAOkn4AABJ2dwtrSw01400.jpg" alt="" width="205" height="70"></a>
 								<div class="hd_search_wrap clearfix">
 									<label for="keyword" style="color: rgb(170, 170, 170);"></label>
 									<input class="hd_search_ipt" name="keyword" id="keyword" type="text" value="" placeholder="买小家电上1号店">
 									<button type="button" class="hd_search_btn" onclick="javascript:searchMeForClick();">
-									<i class="hd_iconfont"></i>
-								</button>
+										<i class="hd_iconfont"></i>
+									</button>
 								</div>
-								<!--搜索提示 begin-->
-								<div id="searchSuggest" class="hd_search_tips_result" style="display: block;" onmouseover="$('#searchSuggest').show()"></div>
-								<!--搜索提示 end-->
+								<!--放下拉提示的盒子-->
+								<div id="searchSuggest" class="hd_search_tips_result" style="display: block;">
+									<ul class="hd_search_tips_list" style="display: none;">
+										<!--<li class="ss_item">
+											<a href="javascript:void(0);" class="hd_suggest_item"><b>外星人</b></a>
+										</li>-->
+									</ul>
+								</div>
 							</div>
 						</div>
 						<p class="hd_hot_search">
@@ -91,7 +97,6 @@
 							<a title="红酒" target="_blank" href="//search.yhd.com/c0-0/k%25E7%25BA%25A2%25E9%2585%2592/">红酒</a>
 							<a title="洗衣液凝珠" target="_blank" href="//search.yhd.com/c0-0/k%25E6%25B4%2597%25E8%25A1%25A3%25E6%25B6%25B2%25E5%2587%259D%25E7%258F%25A0/">洗衣液凝珠</a>
 						</p>
-						<!--搜索推荐-->
 					</div>
 					<div class="hd_mini_cart" id="miniCart">
 						<a href="cart.html" class="hd_prism_cart">

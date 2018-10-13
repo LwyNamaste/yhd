@@ -1,6 +1,7 @@
 !function($){
 //1.导入模块的公用部分	
 	$('.h_header').load('header.html .h_header_wrap',function(){
+		//头部登陆之后的样式
 			function addCookie(key,value,day){
 				var date=new Date();//创建日期对象
 				date.setDate(date.getDate()+day);//过期时间：获取当前的日期+天数，设置给date
@@ -18,9 +19,7 @@
 			}
 			function delCookie(key,value){
 				addCookie(key,value,-1);//添加的函数,将时间设置为过去时间
-			}
-			
-			
+			}		
 			//显示隐藏
 			$(function(){
 				if(getCookie('UserName')){
@@ -34,8 +33,6 @@
 				});
 			});
 	});
-	//第一个参数：地址。
-	//第二个参数：选择器。
 	$('.footercontent').load('footer.html .ft_wrap');
 }(jQuery);
 
@@ -46,7 +43,6 @@
 				url: 'http://10.31.162.12/yhd/php/known_youwant.php',
 				dataType: 'json'
 			}).done(function(data) {
-				console.log(data);
 				$str='';
 				$.each(data,function(index,item){
 					$str+=`<li>
@@ -70,7 +66,6 @@
 					url: 'http://10.31.162.12/yhd/php/num_one_qiang.php',
 					dataType:'json'
 				}).done(function(data){
-					console.log(data);
 					$str='';
 					$.each(data,function(index,item){
 						$str+=`<li class="prod" ">
@@ -93,7 +88,6 @@
 						url: 'http://10.31.162.12/yhd/php/lunbo.php',
 						dataType: 'json'
 					}).done(function(data) {
-						console.log(data);
 						$str='';
 						$.each(data,function(index,item){
 							$str+=`<li style="z-index: 0;">
@@ -104,13 +98,76 @@
 						})
 						$('.lunbo_show ul').html($str);						
 					});
-       
+										
+			//tab切换的数据	
+					$.ajax({
+						url: 'http://10.31.162.12/yhd/php/tab.php',
+						dataType: 'json'
+					}).done(function(data) {
+						$str1='';
+						$str2='';
+						$str3='';
+						$str4='';
+						$str5='';
+						$.each(data,function(index,item){
+							if(index>=0&&index<=5){
+								$str1+=`<li>
+									<a href="#" target="_blank" title="${item.title}">
+										<img src="${item.url}" alt="${item.title}">
+										<p class="pro_name" title="${item.title}">${item.title}</p>
+										<span class="discount_info">${item.discount}折</span>
+									</a>
+								</li>`;								
+							}
+							else if(index>=6&&index<=11){
+								$str2+=`<li>
+									<a href="#" target="_blank" title="${item.title}">
+										<img src="${item.url}" alt="${item.title}">
+										<p class="pro_name" title="${item.title}">${item.title}</p>
+										<span class="discount_info">${item.discount}折</span>
+									</a>
+								</li>`;									
+							}
+							else if(index>=12&&index<=17){
+								$str3+=`<li>
+									<a href="#" target="_blank" title="${item.title}">
+										<img src="${item.url}" alt="${item.title}">
+										<p class="pro_name" title="${item.title}">${item.title}</p>
+										<span class="discount_info">${item.discount}折</span>
+									</a>
+								</li>`;									
+							}
+							else if(index>=18&&index<=23){
+								$str4+=`<li>
+									<a href="#" target="_blank" title="${item.title}">
+										<img src="${item.url}" alt="${item.title}">
+										<p class="pro_name" title="${item.title}">${item.title}</p>
+										<span class="discount_info">${item.discount}折</span>
+									</a>
+								</li>`;									
+							}
+							else if(index>=24&&index<=29){
+								$str5+=`<li>
+									<a href="#" target="_blank" title="${item.title}">
+										<img src="${item.url}" alt="${item.title}">
+										<p class="pro_name" title="${item.title}">${item.title}</p>
+										<span class="discount_info">${item.discount}折</span>
+									</a>
+								</li>`;									
+							}													
+						});
+						$('.rank_content .first_tab').html($str1);
+						$('.rank_content .second_tab').html($str2);	
+						$('.rank_content .third_tab').html($str3);	
+						$('.rank_content .fourth_tab').html($str4);	
+						$('.rank_content .fifth_tab').html($str5);	
+					});			     
 }(jQuery);
 
 
 //效果部分
 !function ($){
-//顶部广告的效果
+//1.顶部广告的效果
 	var $indextopbanner=$('.index_topbanner');
 	var $smallbanner=$('.small_topbanner');
 	var $bigbanner=$('.big_topbanner');
@@ -128,7 +185,7 @@
 	});
 	
 	
-//一号抢购的幻灯片效果
+//2.一号抢购的幻灯片效果
 	var $prev=$('.num_one_qiang .prev');
 	var $next=$('.num_one_qiang .next');
 	var $ul=$('.num_one_qiang ul');
@@ -159,7 +216,7 @@
 	});
 	
 	
-//左侧电梯效果
+//3.左侧电梯效果
  var $dianti=$('.elec_floor_lift');
  var $diantili=$('.elec_floor_lift li');
  var $louceng=$('.lift_floor');
@@ -177,7 +234,7 @@
 			scrollTop: $top
 		});
 	});
-//轮播图效果
+//4.轮播图效果
 		var $lunbo=$('.lunbo_show');		
 		var $pic=$('.lunbo_show ul');
 		var $btnLi=$('.lunbo_show ol li');
@@ -243,7 +300,7 @@
             opacity: 0
         }, 300)
 	}
-//右边侧边栏效果
+//5.右边侧边栏效果
 $('.yhd_prism_wrap').hover(function(){
 	$('.yhd_prism_nav').animate({
 		left:0
@@ -253,8 +310,57 @@ $('.yhd_prism_wrap').hover(function(){
 		left:34
 	},300);	
 });
+//6.回到顶部效果
+$('.totop').on('click',function(){
+	$('html,body').animate({
+		scrollTop:0
+	});
+});
 
-//tab切换的效果
-	
-//懂你想要的效果
+//7.顶部固定导航效果
+	$(window).on('scroll',function(){
+		var $scrolltop=$(window).scrollTop();//获取滚动条的top值。
+		if($scrolltop>=681){
+			$('.hd_search_form').addClass('hd_search_fixed');
+			$('.hd_fixed_logo').css('display','block');
+			$('.hd_head_search').css('z-index','950');
+		}else{
+			$('.hd_search_form').removeClass('hd_search_fixed');
+			$('.hd_fixed_logo').css('display','none');
+			$('.hd_head_search').css('z-index','501');
+		}
+  });
+
+
+//8.一号生鲜tab切换
+	var $btn=$('.slider_nav a');
+	var $content=$('.left_slider ul li');
+	$btn.on('mouseover',function(){
+		$(this).addClass('cur').siblings('a').removeClass('cur');
+		$content.eq($(this).index()).show().siblings('li').hide();
+	});
+//9.tab切换的效果(一号闪购排行榜的tab)
+    var $tabbtn=$('.rank_tab ul li');
+    var $tabcontent=$('.rank_content ul');
+ 	$tabbtn.on('mouseover',function(){
+		$(this).addClass('cur').siblings('li').removeClass('cur');
+		$tabcontent.eq($(this).index()).show().siblings('ul').hide();
+		var $index=$(this).index();
+		var $leftval=$index*82;
+		$('.cur_item').css('left',$leftval);
+	});   
+
+//懂你想要的效果(查看详情上移)
+//10.和放大镜那里同理延时
+setTimeout(function(){
+	var $known_youli=$('.known_you_like ul').children('li');
+	$known_youli.hover(function(){
+	    $(this).find('.operate_area').css('display','block');
+		$(this).find('.pro_name').css('display','none');
+	},function(){
+	    $(this).find('.operate_area').css('display','none');
+		$(this).find('.pro_name').css('display','block');
+	});
+},1000)
+
 }(jQuery);

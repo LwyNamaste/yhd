@@ -770,6 +770,7 @@ body {
 .num_one_shan .rank_content {
     height: 316px;
     padding: 10px 2px 0 1px;
+    overflow: hidden;
     li {
         _display: inline;
         float: left;
@@ -829,15 +830,6 @@ body {
     color: #fff;
     font-style: normal;
     font-size: 11px;
-}
-.num_one_shan .rank_content li a .no_1 {
-    background: url(../images/indexbody_sprite.png?801dc06) no-repeat -60px 0;
-}
-.num_one_shan .rank_content li a .no_2 {
-    background: url(../images/indexbody_sprite.png?801dc06) no-repeat -90px 0;
-}
-.num_one_shan .rank_content li a .no_3 {
-    background: url(../images/indexbody_sprite.png?801dc06) no-repeat -120px 0;
 }
 //爱上新部分
 //左边图片
@@ -923,7 +915,6 @@ body {
 .love_new .personal_clean .brand_banner {
     float: left;
     display: block;
-    _display: inline;
     width: 250px;
     height: 360px;
     overflow: hidden;
@@ -970,6 +961,9 @@ body {
     overflow: hidden;
     color: #999;
 }
+.love_new .brand_right li:hover img{
+     transform: translate3d(-5px, 0, 0);
+}
 .love_new .brand_right li a {
     height: 90px;
     display: block;
@@ -978,6 +972,7 @@ body {
     position: absolute;
     right: 5px;
     bottom: 10px;
+    transition: all 0.4s ease;
 }
 //右边生活派
 .love_new .life_pie {
@@ -1010,6 +1005,8 @@ body {
         bottom: 0;
         width: 210px;
         height: 210px;
+        transition: all 0.4s ease;
+        
     }
     .pro_tit {
         position: relative;
@@ -1029,6 +1026,9 @@ body {
         color: #999;
         font-size: 14px;
     }
+}
+.love_new .life_pie a.brand_banner:hover img {
+    transform: translate3d(-5px,0,0);
 }
 .love_new .life_pie .brand_right {
     position: relative;
@@ -1052,6 +1052,8 @@ body {
                 top: 0;
                 widows: 205px;
                 height: 105px;
+                transition: all 0.4s ease;
+                
             }
             p {
                 position: relative;
@@ -1061,6 +1063,9 @@ body {
             }
         }
     }
+.love_new .life_pie .life_pic a:hover img{
+    transform: translate3d(-5px,0,0);    
+}
 .love_new .life_pie .life_pic p {
     position: relative;
     z-index: 105;
@@ -1327,6 +1332,30 @@ body {
         padding-top: 20px;
     }
 }
+.index_floor .left_con .floor_silder .caption {
+  height: 20px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 20px;
+}
+.index_floor .left_con .floor_silder .sub_tit {
+    height: 30px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #666;
+    line-height: 30px;
+}
+.index_floor .left_con .floor_silder li img{
+    width:130px;
+    height:130px;
+    margin-top:5px;
+    margin: 0 auto;
+    }
+.china_food .left_con .floor_silder .caption {color: #f78b4b;}
+.care_makeup .left_con .floor_silder .caption {color: #ff87d0;}
+.home_life .left_con .floor_silder .caption{color:#925740}
+.phone_electric .left_con .floor_silder .caption {color: #5c9bf1;}
+
 .index_floor .left_con .floor_silder .turn_show {
     position: absolute;
     top: 234px;
@@ -1667,7 +1696,6 @@ body {
 }
 .columns_wrap .left_slider .slider_nav a {
     float: left;
-    _display: inline;
     width: 22px;
     height: 4px;
     overflow: hidden;
@@ -1886,6 +1914,9 @@ body {
         }
     }
 }
+.known_you_like .you_like_list li a:hover {
+    border: 1px solid #f89597;
+}
 .known_you_like .you_like_list .flip_wrap {
     margin: 0 auto;
 }
@@ -1911,7 +1942,7 @@ body {
     line-height: 20px;
     font-size: 14px;
 }
-.mod_you_like .you_like_list .pro_name .pro_mask {
+.known_you_like .you_like_list .pro_name .pro_mask {
     position: absolute;
     left: 0;
     top: 40px;
@@ -2103,19 +2134,6 @@ body {
 .yhd_prism_nav a.prism_cart_tab .prism_cart_num {
     margin-top: 8px;
 }
-//.yhd_prism_nav a.prism_cart_tab .prism_cart_num u {
-//  display: inline-block;
-//  min-width: 14px;
-//  height: 20px;
-//  padding: 0 3px;
-//  -moz-border-radius: 8px;
-//  border-radius: 8px;
-//  background-color: #ff3c3c;
-//  line-height: 20px;
-//  color: #fff;
-//  text-decoration: none;
-//  text-align: center;
-//}
 .prism_iconfont {
     font-family: "iconfont" !important;
     font-size: 20px;

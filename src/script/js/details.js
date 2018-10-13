@@ -1,8 +1,6 @@
 //1.导入模块的公用部分
 !function($){
 	$('.details_header').load('header.html .h_header_wrap');
-	//第一个参数：地址。
-	//第二个参数：选择器。
 	$('.detail_footer').load('footer.html .ft_wrap');
 				$.ajax({
 				url:'http://10.31.162.12/yhd/php/details.php',
@@ -41,7 +39,7 @@
 
 
 !function(){
-//详情页放大镜效果
+//11.详情页放大镜效果
 	$('#spic').hover(function(){
 		$('#sf').css('visibility','visible');
 		$('#bf').css('visibility','visible');

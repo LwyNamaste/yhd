@@ -1,7 +1,5 @@
-<?php  
-	
-	include "conn.php";
-	
+<?php  	
+	include "conn.php";	
 	if(isset($_GET['sid'])){
 		$sid=$_GET['sid'];
 	}

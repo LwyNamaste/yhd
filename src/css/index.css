@@ -274,6 +274,7 @@
   -moz-border-radius: 2px;
   border-radius: 2px;
   background-color: #ff4040;
+  width: 750px;
 }
 .hd_search_wrap .hd_search_ipt {
   float: left;
@@ -303,6 +304,33 @@
   font-style: normal;
 }
 
+.hd_header_right .hd_head_search .hd_search_fixed {
+  position: fixed;
+  left: 0;
+  z-index: 950;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #dfdfdf;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.hd_header_right .hd_search_form .hd_fixed_logo {
+  display: none;
+  float: left;
+  margin-right: 47px;
+}
+
+.hd_header_right .hd_search_fixed .hd_fixed_logo img {
+  width: 150px;
+  height: 60px;
+}
+
+.hd_header_right .hd_search_fixed .hd_search_wrap {
+  float: left;
+  margin: 10px 0 0 0;
+}
+
 .hd_hot_search {
   height: 36px;
   overflow: hidden;
@@ -313,6 +341,10 @@
   line-height: 36px;
   color: #aaa;
   font-size: 14px;
+}
+
+.hd_hot_search a:hover {
+  color: #ff4040;
 }
 
 .hd_mini_cart {
@@ -348,6 +380,9 @@
   float: left;
   margin-right: 30px;
   font-size: 16px;
+}
+.hd_header_nav li a:hover {
+  color: #ff4040;
 }
 
 .regist_header {
@@ -1384,6 +1419,7 @@ body {
 .num_one_shan .rank_content {
   height: 316px;
   padding: 10px 2px 0 1px;
+  overflow: hidden;
 }
 .num_one_shan .rank_content li {
   _display: inline;
@@ -1448,18 +1484,6 @@ body {
   color: #fff;
   font-style: normal;
   font-size: 11px;
-}
-
-.num_one_shan .rank_content li a .no_1 {
-  background: url(../images/indexbody_sprite.png?801dc06) no-repeat -60px 0;
-}
-
-.num_one_shan .rank_content li a .no_2 {
-  background: url(../images/indexbody_sprite.png?801dc06) no-repeat -90px 0;
-}
-
-.num_one_shan .rank_content li a .no_3 {
-  background: url(../images/indexbody_sprite.png?801dc06) no-repeat -120px 0;
 }
 
 .love_new {
@@ -1551,7 +1575,6 @@ body {
 .love_new .personal_clean .brand_banner {
   float: left;
   display: block;
-  _display: inline;
   width: 250px;
   height: 360px;
   overflow: hidden;
@@ -1602,6 +1625,10 @@ body {
   color: #999;
 }
 
+.love_new .brand_right li:hover img {
+  transform: translate3d(-5px, 0, 0);
+}
+
 .love_new .brand_right li a {
   height: 90px;
   display: block;
@@ -1611,6 +1638,7 @@ body {
   position: absolute;
   right: 5px;
   bottom: 10px;
+  transition: all 0.4s ease;
 }
 
 .love_new .life_pie {
@@ -1645,6 +1673,7 @@ body {
   bottom: 0;
   width: 210px;
   height: 210px;
+  transition: all 0.4s ease;
 }
 .love_new .life_pie a.brand_banner .pro_tit {
   position: relative;
@@ -1663,6 +1692,10 @@ body {
   line-height: 20px;
   color: #999;
   font-size: 14px;
+}
+
+.love_new .life_pie a.brand_banner:hover img {
+  transform: translate3d(-5px, 0, 0);
 }
 
 .love_new .life_pie .brand_right {
@@ -1690,12 +1723,17 @@ body {
   top: 0;
   widows: 205px;
   height: 105px;
+  transition: all 0.4s ease;
 }
 .love_new .life_pie .life_pic a p {
   position: relative;
   z-index: 105;
   font-size: 14px;
   color: #fb6233;
+}
+
+.love_new .life_pie .life_pic a:hover img {
+  transform: translate3d(-5px, 0, 0);
 }
 
 .love_new .life_pie .life_pic p {
@@ -1993,6 +2031,44 @@ body {
   display: block;
   height: 205px;
   padding-top: 20px;
+}
+
+.index_floor .left_con .floor_silder .caption {
+  height: 20px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.index_floor .left_con .floor_silder .sub_tit {
+  height: 30px;
+  overflow: hidden;
+  font-size: 14px;
+  color: #666;
+  line-height: 30px;
+}
+
+.index_floor .left_con .floor_silder li img {
+  width: 130px;
+  height: 130px;
+  margin-top: 5px;
+  margin: 0 auto;
+}
+
+.china_food .left_con .floor_silder .caption {
+  color: #f78b4b;
+}
+
+.care_makeup .left_con .floor_silder .caption {
+  color: #ff87d0;
+}
+
+.home_life .left_con .floor_silder .caption {
+  color: #925740;
+}
+
+.phone_electric .left_con .floor_silder .caption {
+  color: #5c9bf1;
 }
 
 .index_floor .left_con .floor_silder .turn_show {
@@ -2367,7 +2443,6 @@ body {
 
 .columns_wrap .left_slider .slider_nav a {
   float: left;
-  _display: inline;
   width: 22px;
   height: 4px;
   overflow: hidden;
@@ -2615,6 +2690,10 @@ body {
   color: #333;
 }
 
+.known_you_like .you_like_list li a:hover {
+  border: 1px solid #f89597;
+}
+
 .known_you_like .you_like_list .flip_wrap {
   margin: 0 auto;
 }
@@ -2643,7 +2722,7 @@ body {
   font-size: 14px;
 }
 
-.mod_you_like .you_like_list .pro_name .pro_mask {
+.known_you_like .you_like_list .pro_name .pro_mask {
   position: absolute;
   left: 0;
   top: 40px;
