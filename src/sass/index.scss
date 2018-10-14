@@ -1350,7 +1350,20 @@ body {
     height:130px;
     margin-top:5px;
     margin: 0 auto;
-    }
+}
+.china_food .left_con .floor_silder .img_first .color_mask {
+    background-color: #f89d5d;
+    opacity: 0;
+}
+.index_floor .left_con .floor_silder .color_mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 225px;
+    border-radius: 4px;
+}
 .china_food .left_con .floor_silder .caption {color: #f78b4b;}
 .care_makeup .left_con .floor_silder .caption {color: #ff87d0;}
 .home_life .left_con .floor_silder .caption{color:#925740}
@@ -1394,7 +1407,9 @@ body {
         color: #fff;
     }
 }
-
+.comment_list ul{
+    position: absolute;
+}
 
 .china_food .left_con .comment .comment_left {
     border-right: 1px solid #f7d9b7;

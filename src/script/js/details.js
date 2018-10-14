@@ -24,7 +24,7 @@
 					$('.number').html($str1);
 					
 					var $str2=`
-						<img src="${$urlarr[0]}" alt="" class="loadimg" sid="5">`;	
+						<img src="${$urlarr[0]}" alt="" class="loadimg" sid="${data[0].sid}">`;	
 					$('#spic .spic_img').html($str2);
 					var $str3='';
 						$.each($urlarr,function(index,item){

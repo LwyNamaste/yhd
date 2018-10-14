@@ -34,9 +34,12 @@
 		<div class="wrap">
 			<!--购物车为空时显示的盒子-->
 			<div class="empty-cart">
+				<div class="img_wrap"> <img src="//img.yihaodianimg.com/cart/shopping/pc/images/no_goods.gif" width="300" height="300"> </div>				
 				<div class="empty-cart-msg">
-					购物车空空的哦~，去看看心仪的商品吧~
-					<a href="">去购物></a>
+					购物车还是空的呢，快去采购吧~
+					<div class="btn_box">
+						<a href="index.html" class="cancel">去逛逛</a>
+					</div>
 				</div>
 			</div>			
 			<div class="cart_list_header cart_wrap cart_tit"> 
@@ -72,7 +75,7 @@
 										<span>
 											换购
 											<b></b>
-										</span> 活动商品已购满999.00元，可加价换购商品10件&gt;
+										</span> 指定商品购买1件可优惠换购热销商品
 									</a>
 									<a class="header-left-p2" href="">换购商品</a>
 									<a href="">去凑单 &gt;</a>
@@ -140,6 +143,32 @@
 					</div>
 				</div>
 			</div>		
+			<div id="cart-floatbar">
+				<div class="select-all">
+					<div class="cart-checkbox">
+						<input type="checkbox" checked="" name="" id="" class="allsel" value=""> 全选
+					</div>
+				</div>
+				<div class="operation">
+					<a href="javascript:void(0)">删除选中的商品</a>
+					<a href="javascript:void(0)">移到我的关注</a>
+				</div>
+				<div class="toolbar-right">
+					<a class="go_accounts" href="javascript:void(0);">去结算</a>
+					<div class="price-sum">
+						<span class="txt">总价（不含运费）：</span>
+						<span class="totalprice">￥0.00</span>
+						<span class="txt">已节省：</span>
+						<span class="totalsave">-￥0.00</span>
+					</div>
+					<div class="amount-sum">
+						已选择
+						<em>0</em> 件商品
+						<b></b>
+					</div>
+
+				</div>
+			</div>
 		</div>
 	</div>
 	<!--导入底部-->

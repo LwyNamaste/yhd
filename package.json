@@ -1,9 +1,28 @@
 {
   "devDependencies": {
+    "gulp-concat": "^2.6.1",
     "gulp-uglify": "^3.0.1",
     "webpack": "^4.20.2"
   },
   "dependencies": {
     "express": "^4.16.4"
-  }
+  },
+  "name": "yhd",
+  "description": "二阶段终极项目",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LwyNamaste/yhd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LwyNamaste/yhd/issues"
+  },
+  "homepage": "https://github.com/LwyNamaste/yhd#readme"
 }

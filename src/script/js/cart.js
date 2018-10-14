@@ -67,36 +67,6 @@
 	    }
 	}
 	
-	
-	$('.goods-list ul').on('click', '.p-btn a', function() {//委托，点击购物车按钮
-	    var sid = $(this).parents('.goodsinfo').find('.loadimg').attr('sid');//当前按钮对应图片的sid
-	    cookieToArray();//获取cookie值，放到对应的数组中
-	    if ($.inArray(sid, sidarr) != -1) {//存在，数量加1
-	        $('.goods-item:visible').each(function() {//遍历可视的商品列表
-	            if (sid == $(this).find('img').attr('sid')) {//添加购物车按钮的索引和购物车中商品列表的索引一致
-	                var $num = $(this).find('.quantity-form input').val();//获取数量的值
-	                $num++;//数量累加
-	                $(this).find('.quantity-form input').val($num);//将数量赋值回去
-	                //计算价格
-	                var $dj = parseFloat($(this).find('.b-price strong').html());//获取当前的单价
-	                $(this).find('.b-sum strong').html(($dj * $num).toFixed(2));//计算商品总价
-	
-	                //存储数量到cookie里面。通过编号找数量
-	                numarr[$.inArray(sid, sidarr)] = $num;//将数量存储到对应的cookie存放数量的数组中
-	                addCookie('cartnum', numarr.toString(), 7);//添加购物车
-	                totalprice();
-	            }
-	        });
-	    }else{//当前商品列表没有进入购物车，创建商品列表
-	        sidarr.push(sid);//将当前id添加到数组里面。
-	        addCookie('cartsid', sidarr.toString(), 7);//将整个数组添加到cookie
-	        numarr.push(1);//走这里数量都是1.
-	        addCookie('cartnum', numarr.toString(), 7);
-	        createcart(sid, 1);
-	        totalprice();
-	    }
-	});
-	
 	//3.页面加载检测购物车(cookie里面)是否有数据，有的话创建商品列表
 	if (getCookie('cartsid') && getCookie('cartnum')) {
 	    var s = getCookie('cartsid').split(',');//存放sid数组
